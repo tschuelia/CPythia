@@ -57,50 +57,6 @@ typedef struct {
   double bollback_multinomial;
 } corax_msa_features;
 
-    /**
-     * Takes a multiple sequence alignment, the number of states and a tipmap and
-     * computes the Shannon entropies per alignment site (in bits).
-     *
-     * @param msa Multiple Sequence Alignment
-     * @param states Number of states (e.g., DNA=4, AA=20 etc.)
-     * @param tipmap Mapping from chars to states (e.g., corax_map_nt for DNA)
-     * @return Array of per-site Shannon entropies (in bits). Each per-site entropy is >= 0.
-     */
-  CORAX_EXPORT double *
-  corax_msa_column_entropies(const corax_msa_t *   msa,
-                             unsigned int          states,
-                             const corax_state_t * tipmap
-                             );
-
-  /**
-   * Takes a multiple sequence alignment, the number of states and a tipmap and
-   * compute the Shannon entropy of the alignment.
-   *
-   * @param msa Multiple Sequence Alignment
-   * @param states Number of states (e.g., DNA=4, AA=20 etc.)
-   * @param tipmap Mapping from chars to states (e.g., corax_map_nt for DNA)
-   * @return Shannon entropy of the multiple sequence alignment (in bits). The entropy is >= 0.
-   */
-  CORAX_EXPORT double
-  corax_msa_entropy(const corax_msa_t *         msa,
-                          unsigned int          states,
-                          const corax_state_t * tipmap
-                    );
-
-
-  /**
-   * Takes a multiple sequence alignment and a tipmap and computes the bollback multinomial
-   * statistic according to Bollback, JP: Bayesian model adequacy and choice in phylogenetics (2002).
-   *
-   * @param msa Multiple Sequence Alignment. Note that the MSA object is modified during
-   *            the computation of the multinomial statistic.
-   * @param tipmap Mapping from chars to states (e.g., corax_map_nt for DNA)
-   * @return Bollback multinomial statistic. The bollback multinomial statistic is always <= 0.
-   */
-  CORAX_EXPORT double
-  corax_msa_bollback_multinomial(corax_msa_t *         msa,
-                                 const corax_state_t * tipmap
-                                 );
 
   /**
    * Takes a multiple sequence alignment, the number of states and a tipmap and
