@@ -3,7 +3,6 @@
 #include "corax/util/compress.h"
 #include "corax/util/msa.h"
 
-
 CORAX_EXPORT corax_msa_features *
 corax_msa_compute_features(corax_msa_t *   msa,
                            unsigned int          states,
@@ -55,6 +54,8 @@ corax_msa_compute_features(corax_msa_t *   msa,
   features->patterns_per_taxa = msa_patterns / msa_taxa;
 
   free(msa_stats);
+  free(site_pattern_map);
+  free(site_weights);
 
   return features;
 }
