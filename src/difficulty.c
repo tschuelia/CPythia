@@ -53,12 +53,13 @@ corax_msa_compute_features(corax_msa_t *   msa,
   features->patterns = msa_patterns;
   features->patterns_per_taxa = msa_patterns / msa_taxa;
 
-  free(msa_stats);
+  corax_msa_destroy_stats(msa_stats);
   free(site_pattern_map);
   free(site_weights);
 
   return features;
 }
+
 
 CORAX_EXPORT double
 corax_msa_predict_difficulty(const corax_msa_features * msa_features,
