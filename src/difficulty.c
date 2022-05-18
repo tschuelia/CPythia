@@ -67,10 +67,9 @@ corax_msa_predict_difficulty(const corax_msa_features * msa_features,
                              int                        prediction_margin
                              )
 {
-    union Entry *feat = (union Entry *)calloc(1, sizeof(union Entry));
-    const int num_features = get_num_feature();
+    union Entry *feat = (union Entry *)calloc(num_features, sizeof(union Entry));
 
-    double prediction_features[7] = {
+    double prediction_features[num_features] = {
             msa_features->patterns_per_taxa,
             msa_features->sites_per_taxa,
             msa_features->proportion_gaps,
@@ -81,9 +80,11 @@ corax_msa_predict_difficulty(const corax_msa_features * msa_features,
     };
 
     for (int i = 0; i < num_features; ++i) {
-        feat[i].missing = -1; // TODO: check if this feature is present or not
         feat[i].fvalue = prediction_features[i];
     }
 
-    return predict(feat, prediction_margin);
+    double prediction = predict(feat, prediction_margin);
+    free(feat);
+
+    return prediction;
 }
