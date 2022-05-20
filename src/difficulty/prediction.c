@@ -1,10 +1,14 @@
-#include "prediction.h"
 
-int get_num_class(void) {
+#include "header.h"
+
+;
+
+
+size_t get_num_class(void) {
   return 1;
 }
 
-int get_num_feature() {
+size_t get_num_feature(void) {
   return 7;
 }
 
@@ -55,9 +59,8 @@ double predict(union Entry* data, int pred_margin) {
   sum += predict_margin_unit12(data);
   sum += predict_margin_unit13(data);
   sum += predict_margin_unit14(data);
-  sum += predict_margin_unit15(data);
 
-  sum = sum / 1000 + (double)(0);
+  sum = sum / 100 + (double)(0);
   if (!pred_margin) {
     return pred_transform(sum);
   } else {

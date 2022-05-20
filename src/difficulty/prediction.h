@@ -28,12 +28,11 @@ struct Node {
   int right_child;
 };
 
-
 extern const unsigned char is_categorical[];
 
 
-int get_num_class(void);
-int get_num_feature();
+size_t get_num_class(void);
+size_t get_num_feature(void);
 const char* get_pred_transform(void);
 float get_sigmoid_alpha(void);
 float get_ratio_c(void);
@@ -57,4 +56,3 @@ double predict_margin_unit11(union Entry* data);
 double predict_margin_unit12(union Entry* data);
 double predict_margin_unit13(union Entry* data);
 double predict_margin_unit14(union Entry* data);
-double predict_margin_unit15(union Entry* data);
