@@ -44,7 +44,7 @@ corax_msa_compute_features(corax_msa_t *   msa,
   features->entropy = msa_stats->entropy;
 
   // The Bollback multinomial computation changes the MSA object
-  // the msa->count afterwards corresponds to the number of patterns instead of the number of sites
+  // the msa->length afterwards corresponds to the number of patterns instead of the number of sites
   unsigned int* site_pattern_map = (unsigned int *)calloc(msa->length, sizeof(unsigned int));
   unsigned int* site_weights = corax_compress_site_patterns_msa(msa, tipmap, site_pattern_map);
   features->bollback_multinomial = corax_msa_bollback_multinomial(msa, site_weights, tipmap);
