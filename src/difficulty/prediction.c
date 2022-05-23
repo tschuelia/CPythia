@@ -1,5 +1,5 @@
 
-#include "header.h"
+#include "prediction.h"
 
 ;
 
@@ -9,7 +9,7 @@ size_t get_num_class(void) {
 }
 
 size_t get_num_feature(void) {
-  return 7;
+  return 8;
 }
 
 const char* get_pred_transform(void) {

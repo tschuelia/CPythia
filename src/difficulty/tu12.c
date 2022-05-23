@@ -1,2851 +1,2695 @@
-#include "header.h"
+#include "prediction.h"
 double predict_margin_unit12(union Entry* data) {
   double sum = (double)0;
   unsigned int tmp;
   int nid, cond, fid;  /* used for folded subtrees */
-  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4572215080261230469) ) ) {
-    if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)8.986842155456542969) ) ) {
-      if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2696644961833953857) ) ) {
-        if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2635.854248046875) ) ) {
-          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1340090036392211914) ) ) {
-            sum += (double)0.1090165238095237993;
-          } else {
-            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.03879999928176403046) ) ) {
-              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01065000006929039955) ) ) {
-                sum += (double)0.3050924833333333308;
-              } else {
-                sum += (double)0.4040988666666667228;
-              }
+  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.995000004768371582) ) ) {
+    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5985960066318511963) ) ) {
+      if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.240384578704833984) ) ) {
+        if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.564999997615814209) ) ) {
+          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2500165030360221863) ) ) {
+            if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.1099999994039535522) ) ) {
+              sum += (double)0.08057835344827583846;
             } else {
-              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.212793499231338501) ) ) {
-                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)14.10489845275878906) ) ) {
-                  sum += (double)0.3568106956521738815;
-                } else {
-                  sum += (double)0.1921749583333333955;
-                }
-              } else {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)7.163896083831787109) ) ) {
-                  sum += (double)0.2353049875000000346;
-                } else {
-                  sum += (double)0.1258079250000000149;
-                }
-              }
+              sum += (double)0.02330724999999999811;
             }
+          } else {
+            sum += (double)0.1796821599999999797;
           }
         } else {
-          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6816000044345855713) ) ) {
-            if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.6311034560203552246) ) ) {
-              sum += (double)0.1859309899999999904;
-            } else {
-              sum += (double)0.0986942647058823147;
-            }
+          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)3.667397737503051758) ) ) {
+            sum += (double)0.3157092727272727273;
           } else {
-            sum += (double)0.0341050785714285612;
+            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)9.248263835906982422) ) ) {
+              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2260.68914794921875) ) ) {
+                sum += (double)0.1411059615384615273;
+              } else {
+                sum += (double)0.02891795000000000823;
+              }
+            } else {
+              if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.9000000059604644775) ) ) {
+                sum += (double)0.2895438161764705698;
+              } else {
+                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2226675227284431458) ) ) {
+                  sum += (double)0.1246726818181818214;
+                } else {
+                  sum += (double)0.2329806810344827728;
+                }
+              }
+            }
           }
         }
       } else {
-        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.9576524496078491211) ) ) {
-          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3408444970846176147) ) ) {
-            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.504411697387695312) ) ) {
-              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)3.373944520950317383) ) ) {
-                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3589.443603515625) ) ) {
-                  sum += (double)0.3918543000000000442;
-                } else {
-                  sum += (double)0.3102522307692308079;
-                }
-              } else {
-                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2296859323978424072) ) ) {
-                  sum += (double)0.4355865312499999642;
-                } else {
-                  sum += (double)0.3808468706896551148;
-                }
-              }
+        if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.4849999994039535522) ) ) {
+          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.09103149920701980591) ) ) {
+            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.1850999966263771057) ) ) {
+              sum += (double)0.02666056249999999156;
             } else {
-              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3538.6055908203125) ) ) {
-                sum += (double)0.3641814519230769376;
+              if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.1750000044703483582) ) ) {
+                if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)67.45217132568359375) ) ) {
+                  if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.3671393692493438721) ) ) {
+                    sum += (double)0.008557650000000001714;
+                  } else {
+                    sum += (double)0.00296181578947368393;
+                  }
+                } else {
+                  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.06499999947845935822) ) ) {
+                    sum += (double)0.002500000000000001353;
+                  } else {
+                    sum += (double)0.003701016129032258517;
+                  }
+                }
               } else {
-                sum += (double)0.1712630972222222714;
+                sum += (double)0.01362951785714285914;
               }
             }
           } else {
-            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1158.0059814453125) ) ) {
-              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8629499971866607666) ) ) {
-                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.3484726846218109131) ) ) {
-                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.08850000053644180298) ) ) {
-                    if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)8.056711912155151367) ) ) {
-                      sum += (double)0.4837552812499998911;
-                    } else {
-                      sum += (double)0.5673072727272726601;
-                    }
+            if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.77305641770362854) ) ) {
+              if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.6074526607990264893) ) ) {
+                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)198.3166656494140625) ) ) {
+                  if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)24.64505481719970703) ) ) {
+                    sum += (double)0.06462678571428571994;
                   } else {
-                    if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3934.425537109375) ) ) {
-                      sum += (double)0.4286060131578947607;
+                    if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2338460460305213928) ) ) {
+                      sum += (double)0.0324623392857142784;
                     } else {
-                      sum += (double)0.5119478124999998769;
+                      sum += (double)0.01618702976190474971;
                     }
                   }
                 } else {
-                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4802000075578689575) ) ) {
-                    sum += (double)0.4399416956521739475;
+                  sum += (double)0.07763825000000000587;
+                }
+              } else {
+                sum += (double)0.06791366999999998155;
+              }
+            } else {
+              if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.254999995231628418) ) ) {
+                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-23018.5380859375) ) ) {
+                  sum += (double)0.01088653125000000124;
+                } else {
+                  if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.1400000005960464478) ) ) {
+                    sum += (double)0.002500000000000000052;
                   } else {
-                    sum += (double)0.3864026521739130637;
+                    sum += (double)0.003084343749999999846;
                   }
                 }
               } else {
-                sum += (double)0.3457224605263158335;
+                sum += (double)0.02444780434782608397;
               }
-            } else {
-              sum += (double)0.3109652321428572064;
             }
           }
         } else {
-          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2833.0113525390625) ) ) {
-            sum += (double)0.2671410543478260902;
-          } else {
-            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)3.978606700897216797) ) ) {
-              sum += (double)0.1783304791666666389;
+          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6850499808788299561) ) ) {
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.008849999867379665375) ) ) {
+              sum += (double)0.2067697619047618729;
             } else {
-              sum += (double)0.04706307499999999588;
+              if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.5751000046730041504) ) ) {
+                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3709775060415267944) ) ) {
+                  if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)11.94161844253540039) ) ) {
+                    if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1173000037670135498) ) ) {
+                      sum += (double)0.0592680125000000016;
+                    } else {
+                      sum += (double)0.1318768571428571568;
+                    }
+                  } else {
+                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2095990031957626343) ) ) {
+                      sum += (double)0.02112272884615384524;
+                    } else {
+                      sum += (double)0.05482140178571427713;
+                    }
+                  }
+                } else {
+                  sum += (double)0.138648475000000021;
+                }
+              } else {
+                sum += (double)0.2008630333333333295;
+              }
+            }
+          } else {
+            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3058239966630935669) ) ) {
+              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-19067.47265625) ) ) {
+                sum += (double)0.0433853499999999892;
+              } else {
+                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)69.89170074462890625) ) ) {
+                  sum += (double)0.1114063124999999793;
+                } else {
+                  sum += (double)0.1872976785714285664;
+                }
+              }
+            } else {
+              sum += (double)0.2548313749999999711;
             }
           }
         }
       }
     } else {
-      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2557695060968399048) ) ) {
-        if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)13.9052577018737793) ) ) {
-          if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4420.158935546875) ) ) {
-            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0002999999924213625491) ) ) {
-              sum += (double)0.339062112500000068;
+      sum += (double)0.4925957822580645518;
+    }
+  } else {
+    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4572215080261230469) ) ) {
+      if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.7563312947750091553) ) ) {
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3346730023622512817) ) ) {
+          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)11.69309568405151367) ) ) {
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.001849999967816984281) ) ) {
+              sum += (double)0.5117218055555555756;
             } else {
-              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1368450000882148743) ) ) {
-                sum += (double)0.04493332758620689066;
-              } else {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)10.55199480056762695) ) ) {
-                  sum += (double)0.2491263240740740625;
+              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2397025004029273987) ) ) {
+                if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)11.73943996429443359) ) ) {
+                  sum += (double)0.3273384416666666463;
                 } else {
-                  if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6713500022888183594) ) ) {
-                    sum += (double)0.1011544479166666677;
+                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1978999972343444824) ) ) {
+                    sum += (double)0.2567055833333333204;
                   } else {
-                    sum += (double)0.2121322058823529588;
+                    sum += (double)0.1347631527777777838;
+                  }
+                }
+              } else {
+                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.142307758331298828) ) ) {
+                  if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.17451930046081543) ) ) {
+                    sum += (double)0.3367638571428571148;
+                  } else {
+                    if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.5242000222206115723) ) ) {
+                      sum += (double)0.387984249999999975;
+                    } else {
+                      sum += (double)0.4282138472222221659;
+                    }
+                  }
+                } else {
+                  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2927590012550354004) ) ) {
+                    if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-5872.31591796875) ) ) {
+                      sum += (double)0.381531000000000009;
+                    } else {
+                      sum += (double)0.2201703289473683767;
+                    }
+                  } else {
+                    sum += (double)0.3732275576923076432;
                   }
                 }
               }
             }
           } else {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1244999952614307404) ) ) {
-              sum += (double)0.007882750000000002602;
-            } else {
-              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1692200005054473877) ) ) {
-                sum += (double)0.1000228124999999885;
-              } else {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)10.3403782844543457) ) ) {
-                  sum += (double)0.02273429411764706087;
+            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)25.34866619110107422) ) ) {
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2559999972581863403) ) ) {
+                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.09235000051558017731) ) ) {
+                  sum += (double)0.313448636363636346;
                 } else {
-                  sum += (double)0.06048696666666664862;
+                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.269649997353553772) ) ) {
+                    sum += (double)0.1705666578947368506;
+                  } else {
+                    sum += (double)0.08442755357142857353;
+                  }
                 }
+              } else {
+                sum += (double)0.2695826453488372465;
               }
+            } else {
+              sum += (double)0.1093770185185184846;
             }
           }
         } else {
-          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.07202149927616119385) ) ) {
-            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.1850999966263771057) ) ) {
-              sum += (double)0.03770355263157894321;
-            } else {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.02944599930197000504) ) ) {
-                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.021390499547123909) ) ) {
-                  sum += (double)0.002500000000000001353;
-                } else {
-                  sum += (double)0.002767346153846154521;
-                }
+          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)10.87053585052490234) ) ) {
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.03640000149607658386) ) ) {
+              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)3.031167984008789062) ) ) {
+                sum += (double)0.4810472678571428018;
               } else {
-                if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)97.11563491821289062) ) ) {
-                  if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.05950300022959709167) ) ) {
-                    sum += (double)0.01370819444444444646;
-                  } else {
-                    sum += (double)0.00537247619047618967;
-                  }
+                sum += (double)0.5699901666666666866;
+              }
+            } else {
+              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2495.089111328125) ) ) {
+                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3595600128173828125) ) ) {
+                  sum += (double)0.4001039910714285774;
                 } else {
-                  if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5860830247402191162) ) ) {
-                    if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-23092.998046875) ) ) {
-                      sum += (double)0.002499999999999999618;
+                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3983.3006591796875) ) ) {
+                    if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1664500012993812561) ) ) {
+                      sum += (double)0.4214337638888889237;
                     } else {
-                      sum += (double)0.002760416666666666227;
+                      sum += (double)0.4574507375000000375;
                     }
                   } else {
-                    sum += (double)0.006223071428571429371;
+                    sum += (double)0.4922463809523809353;
                   }
                 }
+              } else {
+                sum += (double)0.5443205238095237819;
               }
             }
           } else {
-            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-7275.24462890625) ) ) {
-              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)26.51904773712158203) ) ) {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-21606.0595703125) ) ) {
-                  if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6583000123500823975) ) ) {
-                    sum += (double)0.08743400000000001171;
-                  } else {
-                    sum += (double)0.2406180535714285973;
-                  }
-                } else {
-                  if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)16.78939533233642578) ) ) {
-                    if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.5518999993801116943) ) ) {
-                      sum += (double)0.1571446527777777546;
-                    } else {
-                      sum += (double)0.06815900925925924558;
-                    }
-                  } else {
-                    if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4880316108465194702) ) ) {
-                      sum += (double)0.02760602822580645807;
-                    } else {
-                      sum += (double)0.08026657692307691272;
-                    }
-                  }
-                }
-              } else {
-                if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.4743999987840652466) ) ) {
-                  if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.146192498505115509) ) ) {
-                    if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)152.9054489135742188) ) ) {
-                      sum += (double)0.01529437500000000068;
-                    } else {
-                      sum += (double)0.004262555555555555889;
-                    }
-                  } else {
-                    if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-116296.8984375) ) ) {
-                      sum += (double)0.1363451428571428592;
-                    } else {
-                      sum += (double)0.03631177118644066115;
-                    }
-                  }
-                } else {
-                  sum += (double)0.1055397656250000038;
-                }
-              }
+            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.5110000073909759521) ) ) {
+              sum += (double)0.2241943749999999735;
             } else {
-              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)14.96610832214355469) ) ) {
-                sum += (double)0.04324776666666665936;
-              } else {
-                if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.216250002384185791) ) ) {
-                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3382.8251953125) ) ) {
-                    if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-5323.556396484375) ) ) {
-                      sum += (double)0.01055229411764705902;
-                    } else {
-                      sum += (double)0.003154500000000001053;
-                    }
-                  } else {
-                    if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.6544665694236755371) ) ) {
-                      sum += (double)0.03004519117647058354;
-                    } else {
-                      sum += (double)0.00303640000000000073;
-                    }
-                  }
-                } else {
-                  sum += (double)0.02200521874999999961;
-                }
-              }
+              sum += (double)0.410501474999999949;
             }
           }
         }
       } else {
-        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.7375432848930358887) ) ) {
-          if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-7792.081787109375) ) ) {
-            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)22.19331455230712891) ) ) {
-              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)12.39613533020019531) ) ) {
-                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3340245038270950317) ) ) {
-                  sum += (double)0.3474131666666667728;
-                } else {
-                  sum += (double)0.4904672976190476152;
-                }
+        if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)8.722097396850585938) ) ) {
+          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4147830009460449219) ) ) {
+            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3091.4984130859375) ) ) {
+              if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.453124940395355225) ) ) {
+                sum += (double)0.2651557857142857189;
               } else {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-17850.2783203125) ) ) {
-                  sum += (double)0.3719792624999999631;
-                } else {
-                  sum += (double)0.2213325238095238123;
-                }
+                sum += (double)0.1614290166666666748;
               }
             } else {
-              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.5579499900341033936) ) ) {
-                if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4219999909400939941) ) ) {
-                  sum += (double)0.1350558382352941289;
-                } else {
-                  sum += (double)0.0555375468749999962;
-                }
-              } else {
-                sum += (double)0.2284036086956522105;
-              }
+              sum += (double)0.06405190740740740463;
             }
           } else {
-            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.05254999920725822449) ) ) {
-              sum += (double)0.05491621323529411597;
-            } else {
-              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3237830102443695068) ) ) {
-                sum += (double)0.1718186931818181662;
-              } else {
-                sum += (double)0.2738271851851851735;
-              }
-            }
+            sum += (double)0.3303195138888888049;
           }
         } else {
-          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-27254.8544921875) ) ) {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)56.34152603149414062) ) ) {
-              sum += (double)0.221754571428571412;
+          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-21521.0654296875) ) ) {
+            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)35.10289382934570312) ) ) {
+              sum += (double)0.2421120624999999749;
             } else {
-              sum += (double)0.06154402631578947264;
+              sum += (double)0.0968899880952381054;
             }
           } else {
-            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4252884984016418457) ) ) {
-              if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.169858276844024658) ) ) {
-                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.9238427877426147461) ) ) {
-                  sum += (double)0.03962116666666666565;
-                } else {
-                  sum += (double)0.1282276124999999767;
-                }
-              } else {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-5328.383056640625) ) ) {
-                  sum += (double)0.02585532500000000192;
-                } else {
-                  sum += (double)0.008278890243902440466;
-                }
-              }
+            if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.277976691722869873) ) ) {
+              sum += (double)0.112931289473684221;
             } else {
-              sum += (double)0.1364228541666666628;
+              if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.783580303192138672) ) ) {
+                sum += (double)0.007416230769230770445;
+              } else {
+                sum += (double)0.0291342307692307699;
+              }
             }
           }
         }
       }
-    }
-  } else {
-    if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4716695547103881836) ) ) {
-      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6060760021209716797) ) ) {
-        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)6.088670015335083008) ) ) {
-          if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)10.21539163589477539) ) ) {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4784124940633773804) ) ) {
-              sum += (double)0.4126129861111111352;
-            } else {
-              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3022.2926025390625) ) ) {
-                sum += (double)0.5140223888888888482;
+    } else {
+      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6635474860668182373) ) ) {
+        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.033862948417663574) ) ) {
+          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)15.09328365325927734) ) ) {
+            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5441325008869171143) ) ) {
+              if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)32.00900459289550781) ) ) {
+                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)3.921626925468444824) ) ) {
+                  if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)5.444673538208007812) ) ) {
+                    sum += (double)0.4658232031250000293;
+                  } else {
+                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4883529990911483765) ) ) {
+                      sum += (double)0.5457071818181818967;
+                    } else {
+                      sum += (double)0.6014171617647058321;
+                    }
+                  }
+                } else {
+                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4098.70166015625) ) ) {
+                    sum += (double)0.5189557592592592972;
+                  } else {
+                    sum += (double)0.4313977968750000169;
+                  }
+                }
               } else {
-                sum += (double)0.5597221399999999791;
+                sum += (double)0.6194817916666667257;
+              }
+            } else {
+              if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1721500009298324585) ) ) {
+                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6021510064601898193) ) ) {
+                  if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.02245000004768371582) ) ) {
+                    sum += (double)0.6621964999999998547;
+                  } else {
+                    sum += (double)0.6028655806451613808;
+                  }
+                } else {
+                  sum += (double)0.7167990357142856039;
+                }
+              } else {
+                sum += (double)0.5714925543478261982;
               }
             }
           } else {
-            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5362260043621063232) ) ) {
-              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3567.67431640625) ) ) {
-                sum += (double)0.5162563068181819093;
-              } else {
-                sum += (double)0.6082933571428570385;
-              }
-            } else {
-              if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.02139999996870756149) ) ) {
-                sum += (double)0.6890631500000000687;
-              } else {
-                sum += (double)0.6159551250000000477;
-              }
-            }
+            sum += (double)0.3513973888888888841;
           }
         } else {
-          if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-5350.69482421875) ) ) {
-            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)14.33012580871582031) ) ) {
-              sum += (double)0.5515401750000000769;
-            } else {
-              sum += (double)0.3658741363636363042;
-            }
+          if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)2.244230747222900391) ) ) {
+            sum += (double)0.3953760374999999438;
           } else {
-            sum += (double)0.3555527763157895205;
+            sum += (double)0.1926647282608695;
           }
         }
       } else {
-        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.752637147903442383) ) ) {
-          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7396534979343414307) ) ) {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6768469810485839844) ) ) {
-              sum += (double)0.7492945937499999598;
+        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.001827418804168701) ) ) {
+          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.741619497537612915) ) ) {
+            if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1136000007390975952) ) ) {
+              sum += (double)0.7321458478260869374;
             } else {
-              sum += (double)0.7087860499999999453;
+              sum += (double)0.6633342500000000141;
             }
           } else {
             if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)0.61852264404296875) ) ) {
-              sum += (double)0.880581640624999995;
+              sum += (double)0.880581640625000106;
             } else {
-              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)1.639606714248657227) ) ) {
-                sum += (double)0.788908541666666685;
+              if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.08565000072121620178) ) ) {
+                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)1.614215672016143799) ) ) {
+                  sum += (double)0.7990673809523808346;
+                } else {
+                  sum += (double)0.8572069807692307419;
+                }
               } else {
-                sum += (double)0.8455450666666667336;
+                sum += (double)0.7754150978260869742;
               }
             }
           }
         } else {
-          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7615000009536743164) ) ) {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)4.858775615692138672) ) ) {
-              sum += (double)0.68889116666666661;
-            } else {
-              sum += (double)0.7500899500000000053;
-            }
-          } else {
-            sum += (double)0.5797562666666667974;
-          }
-        }
-      }
-    } else {
-      if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5457390248775482178) ) ) {
-        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)10.15000009536743164) ) ) {
-          sum += (double)0.3629758928571428789;
-        } else {
-          sum += (double)0.195594913461538511;
-        }
-      } else {
-        if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1119999997317790985) ) ) {
-          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.04004999995231628418) ) ) {
-            sum += (double)0.414479037500000036;
-          } else {
-            sum += (double)0.1808990357142856997;
-          }
-        } else {
-          if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.9435398280620574951) ) ) {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6021040081977844238) ) ) {
-              sum += (double)0.5651054687500000062;
-            } else {
-              sum += (double)0.6612448846153846649;
-            }
-          } else {
-            if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.3878999948501586914) ) ) {
-              sum += (double)0.3178790952380952106;
-            } else {
-              sum += (double)0.5336795138888890122;
-            }
-          }
+          sum += (double)0.5274432833333333459;
         }
       }
     }
   }
-  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.450540497899055481) ) ) {
-    if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.290740966796875) ) ) {
-      if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2441269978880882263) ) ) {
-        if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4247.4609375) ) ) {
-          if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.003999999957159161568) ) ) {
-            sum += (double)0.4009518125000000044;
+  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.995000004768371582) ) ) {
+    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4594839960336685181) ) ) {
+      if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)8.728658676147460938) ) ) {
+        if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1653690040111541748) ) ) {
+          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3119.6138916015625) ) ) {
+            sum += (double)0.09373502777777778516;
           } else {
-            if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2123499959707260132) ) ) {
-              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.174330495297908783) ) ) {
-                sum += (double)0.1631320781249999963;
-              } else {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)6.711161375045776367) ) ) {
-                  sum += (double)0.3363790131578947018;
-                } else {
-                  sum += (double)0.2356474615384615556;
-                }
-              }
-            } else {
-              sum += (double)0.1222067282608695904;
-            }
+            sum += (double)0.01607923749999999943;
           }
         } else {
-          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1686755046248435974) ) ) {
-            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3033.205810546875) ) ) {
-              sum += (double)0.07546707352941176006;
+          if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)12.09545469284057617) ) ) {
+            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1997.46710205078125) ) ) {
+              sum += (double)0.2459158666666666493;
             } else {
-              sum += (double)0.01948986904761905101;
+              sum += (double)0.07782338461538461372;
             }
           } else {
-            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1725.7713623046875) ) ) {
-              sum += (double)0.228588681034482738;
+            if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.564999997615814209) ) ) {
+              sum += (double)0.1312309999999999865;
             } else {
-              sum += (double)0.08856804687499998663;
-            }
-          }
-        }
-      } else {
-        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.9576524496078491211) ) ) {
-          if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2082.9490966796875) ) ) {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3408444970846176147) ) ) {
-              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)7.390132665634155273) ) ) {
-                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1483872085809707642) ) ) {
-                  sum += (double)0.4545380760869564551;
+              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)7.089411735534667969) ) ) {
+                if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.8650000095367431641) ) ) {
+                  sum += (double)0.2452066607142857346;
                 } else {
-                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3064.7276611328125) ) ) {
-                    if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4258.69384765625) ) ) {
-                      sum += (double)0.3785483352272727142;
-                    } else {
-                      sum += (double)0.323469196428571415;
-                    }
-                  } else {
-                    sum += (double)0.4228384800000000165;
-                  }
+                  sum += (double)0.3455386071428571126;
                 }
               } else {
-                sum += (double)0.2842031309523809779;
-              }
-            } else {
-              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)7.887783050537109375) ) ) {
-                if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8507499992847442627) ) ) {
-                  if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4468123912811279297) ) ) {
-                    if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01829999964684247971) ) ) {
-                      sum += (double)0.5472025441176469052;
-                    } else {
-                      sum += (double)0.456995925438596351;
-                    }
-                  } else {
-                    sum += (double)0.4067511704545453965;
-                  }
-                } else {
-                  sum += (double)0.3822023749999999831;
-                }
-              } else {
-                sum += (double)0.5685769843750001495;
-              }
-            }
-          } else {
-            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.459302425384521484) ) ) {
-              if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7245500087738037109) ) ) {
-                sum += (double)0.4180241125000000446;
-              } else {
-                sum += (double)0.2770787596153845844;
-              }
-            } else {
-              sum += (double)0.129619923076923077;
-            }
-          }
-        } else {
-          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2541.77099609375) ) ) {
-            if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.1105999983847141266) ) ) {
-              sum += (double)0.3261091964285713907;
-            } else {
-              sum += (double)0.2011228281249999861;
-            }
-          } else {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.815078258514404297) ) ) {
-              sum += (double)0.2473888281250000154;
-            } else {
-              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.190494775772094727) ) ) {
-                sum += (double)0.06122173863636364011;
-              } else {
-                sum += (double)0.02531678125000000334;
-              }
-            }
-          }
-        }
-      }
-    } else {
-      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1951034963130950928) ) ) {
-        if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.07213700190186500549) ) ) {
-          if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.1370999962091445923) ) ) {
-            sum += (double)0.0326447045454545462;
-          } else {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)12.375) ) ) {
-              sum += (double)0.009008520833333333658;
-            } else {
-              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8676000237464904785) ) ) {
-                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.05278300121426582336) ) ) {
-                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1880999952554702759) ) ) {
-                    if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)69.22280502319335938) ) ) {
-                      sum += (double)0.004060280000000000312;
-                    } else {
-                      sum += (double)0.002500000000000001353;
-                    }
-                  } else {
-                    sum += (double)0.006030075000000000192;
-                  }
-                } else {
-                  if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.3300798237323760986) ) ) {
-                    sum += (double)0.01047466176470588164;
-                  } else {
-                    sum += (double)0.003298916666666667444;
-                  }
-                }
-              } else {
-                sum += (double)0.00984296875000000189;
-              }
-            }
-          }
-        } else {
-          if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0006499999872175976634) ) ) {
-            sum += (double)0.2527268552631579124;
-          } else {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.972222328186035156) ) ) {
-              sum += (double)0.1683613035714285611;
-            } else {
-              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)29.85139846801757812) ) ) {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-20634.9921875) ) ) {
-                  if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)24.50749301910400391) ) ) {
-                    sum += (double)0.2075700333333333758;
-                  } else {
-                    sum += (double)0.1058092500000000075;
-                  }
-                } else {
-                  if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6884500086307525635) ) ) {
-                    if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)23.60535717010498047) ) ) {
-                      sum += (double)0.07212527884615384244;
-                    } else {
-                      sum += (double)0.02304238249999999294;
-                    }
-                  } else {
-                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1515255048871040344) ) ) {
-                      sum += (double)0.02750806999999999905;
-                    } else {
-                      sum += (double)0.1426294062499999793;
-                    }
-                  }
-                }
-              } else {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-117964.01171875) ) ) {
-                  sum += (double)0.05386619047619048417;
-                } else {
-                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.428399994969367981) ) ) {
-                    if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2756499946117401123) ) ) {
-                      sum += (double)0.008406376623376619547;
-                    } else {
-                      sum += (double)0.02221235483870967475;
-                    }
-                  } else {
-                    sum += (double)0.04363589473684210962;
-                  }
-                }
+                sum += (double)0.2019749705882352975;
               }
             }
           }
         }
       } else {
-        if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.3718000054359436035) ) ) {
-          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-7800.424560546875) ) ) {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)26.79848480224609375) ) ) {
-              if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.8697622120380401611) ) ) {
-                sum += (double)0.3379624499999999698;
+        if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.4149999916553497314) ) ) {
+          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)11.94999980926513672) ) ) {
+            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1353574991226196289) ) ) {
+              if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6658500134944915771) ) ) {
+                sum += (double)0.02348229411764705607;
               } else {
-                sum += (double)0.1899738750000000143;
+                sum += (double)0.005675852941176472155;
               }
             } else {
-              if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.09515000134706497192) ) ) {
-                sum += (double)0.1331880735294117546;
-              } else {
-                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.8385039567947387695) ) ) {
-                  sum += (double)0.05027232352941177207;
+              sum += (double)0.1405576363636363291;
+            }
+          } else {
+            if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.05499999970197677612) ) ) {
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.09086100012063980103) ) ) {
+                if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8529999852180480957) ) ) {
+                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1903499960899353027) ) ) {
+                    if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.808899998664855957) ) ) {
+                      sum += (double)0.002564512578616353743;
+                    } else {
+                      sum += (double)0.004533775000000000305;
+                    }
+                  } else {
+                    sum += (double)0.005826400000000000676;
+                  }
                 } else {
-                  sum += (double)0.01544867500000000025;
+                  sum += (double)0.008679861111111110417;
+                }
+              } else {
+                sum += (double)0.01518378571428571737;
+              }
+            } else {
+              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)23.62983798980712891) ) ) {
+                sum += (double)0.06397896666666666454;
+              } else {
+                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.022533655166625977) ) ) {
+                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4142000079154968262) ) ) {
+                    if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)36.60227203369140625) ) ) {
+                      sum += (double)0.01970015384615384293;
+                    } else {
+                      sum += (double)0.04560836842105262662;
+                    }
+                  } else {
+                    if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3910.263427734375) ) ) {
+                      sum += (double)0.01520848853211007913;
+                    } else {
+                      sum += (double)0.04205252499999999338;
+                    }
+                  }
+                } else {
+                  if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2434999942779541016) ) ) {
+                    sum += (double)0.002500000000000000052;
+                  } else {
+                    sum += (double)0.003261461538461538599;
+                  }
+                }
+              }
+            }
+          }
+        } else {
+          if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.6559292376041412354) ) ) {
+            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-14569.18603515625) ) ) {
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2800929993391036987) ) ) {
+                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)33.24067497253417969) ) ) {
+                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1925999969244003296) ) ) {
+                    if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2569690272212028503) ) ) {
+                      sum += (double)0.0649448124999999904;
+                    } else {
+                      sum += (double)0.01438310000000000109;
+                    }
+                  } else {
+                    sum += (double)0.09295547368421053225;
+                  }
+                } else {
+                  if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.5645000040531158447) ) ) {
+                    sum += (double)0.0234972222222222249;
+                  } else {
+                    sum += (double)0.01172106250000000058;
+                  }
+                }
+              } else {
+                sum += (double)0.09791661363636362803;
+              }
+            } else {
+              if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.121399998664855957) ) ) {
+                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01795000024139881134) ) ) {
+                  sum += (double)0.2199585769230769372;
+                } else {
+                  if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1845235005021095276) ) ) {
+                    sum += (double)0.02330686538461538074;
+                  } else {
+                    if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.05164999887347221375) ) ) {
+                      sum += (double)0.05063434558823529108;
+                    } else {
+                      sum += (double)0.1494120089285713993;
+                    }
+                  }
+                }
+              } else {
+                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-10491.81201171875) ) ) {
+                  sum += (double)0.08282962499999999006;
+                } else {
+                  sum += (double)0.2421125967741935558;
                 }
               }
             }
           } else {
             if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.631920456886291504) ) ) {
-              if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.186517536640167236) ) ) {
-                if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)19.36904716491699219) ) ) {
-                  sum += (double)0.05783631944444443673;
-                } else {
-                  sum += (double)0.02042898148148146811;
-                }
-              } else {
-                if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)20.72772979736328125) ) ) {
-                  sum += (double)0.003146949999999999921;
-                } else {
-                  sum += (double)0.01976072499999999982;
-                }
-              }
-            } else {
-              sum += (double)0.07872928571428570999;
-            }
-          }
-        } else {
-          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3151944875717163086) ) ) {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)13.16964292526245117) ) ) {
-              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-8612.9306640625) ) ) {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)10.95003080368041992) ) ) {
-                  sum += (double)0.3728394531249999977;
-                } else {
-                  sum += (double)0.2710728913043478072;
-                }
-              } else {
-                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.05164999887347221375) ) ) {
-                  sum += (double)0.0732978260869565218;
-                } else {
-                  sum += (double)0.1818706607142857035;
-                }
-              }
-            } else {
-              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2547229975461959839) ) ) {
-                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-7127.94775390625) ) ) {
-                  if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.3460899293422698975) ) ) {
-                    sum += (double)0.1230559107142856906;
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2621420025825500488) ) ) {
+                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2067350000143051147) ) ) {
+                  if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)30.053863525390625) ) ) {
+                    sum += (double)0.009867205882352942867;
                   } else {
-                    sum += (double)0.05843062499999999992;
+                    sum += (double)0.02195879166666666119;
                   }
                 } else {
-                  sum += (double)0.02290443333333332804;
+                  sum += (double)0.00654490909090909255;
                 }
               } else {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)22.91703891754150391) ) ) {
-                  if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2739829868078231812) ) ) {
-                    sum += (double)0.3052904736842105282;
-                  } else {
-                    sum += (double)0.1351017333333333348;
-                  }
+                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.021914303302764893) ) ) {
+                  sum += (double)0.0768396904761904781;
                 } else {
-                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.3293000012636184692) ) ) {
-                    sum += (double)0.0605169078947368419;
-                  } else {
-                    sum += (double)0.143754171875000003;
-                  }
+                  sum += (double)0.02007523148148147862;
                 }
               }
-            }
-          } else {
-            if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)49.44896888732910156) ) ) {
-              if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.5141499936580657959) ) ) {
-                sum += (double)0.2597279741379310836;
-              } else {
-                sum += (double)0.378184137931034503;
-              }
             } else {
-              if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2369667142629623413) ) ) {
-                sum += (double)0.2688638452380952559;
-              } else {
-                sum += (double)0.08384190384615385072;
-              }
-            }
-          }
-        }
-      }
-    }
-  } else {
-    if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.419721648097038269) ) ) {
-      if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.539371490478515625) ) ) {
-        if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)54.42380905151367188) ) ) {
-          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)3.57499992847442627) ) ) {
-            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2445.2841796875) ) ) {
-              sum += (double)0.514679526315789504;
-            } else {
-              sum += (double)0.6027626904761904658;
-            }
-          } else {
-            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2597.6712646484375) ) ) {
-              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-5253.223876953125) ) ) {
-                sum += (double)0.5023713275862068395;
-              } else {
-                sum += (double)0.5863312499999999705;
-              }
-            } else {
-              sum += (double)0.4273407352941176462;
-            }
-          }
-        } else {
-          sum += (double)0.3481743250000000067;
-        }
-      } else {
-        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7397740185260772705) ) ) {
-          if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)45.625) ) ) {
-            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)4.083902359008789062) ) ) {
-              sum += (double)0.5903402857142856508;
-            } else {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6502065062522888184) ) ) {
-                if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.09144999831914901733) ) ) {
-                  if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)12.83052873611450195) ) ) {
-                    sum += (double)0.6566760357142856774;
-                  } else {
-                    sum += (double)0.7012203214285716024;
-                  }
-                } else {
-                  sum += (double)0.6185616413043478756;
-                }
-              } else {
-                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.05954999849200248718) ) ) {
-                  sum += (double)0.7000502833333333008;
-                } else {
-                  sum += (double)0.7523446562500000212;
-                }
-              }
-            }
-          } else {
-            sum += (double)0.5412914210526316161;
-          }
-        } else {
-          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)0.8970215022563934326) ) ) {
-            sum += (double)0.8481548749999999748;
-          } else {
-            if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.05558137223124504089) ) ) {
-              sum += (double)0.7202638375000000037;
-            } else {
-              sum += (double)0.8109164134615386432;
+              sum += (double)0.09601737499999998815;
             }
           }
         }
       }
     } else {
-      if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5498940050601959229) ) ) {
-        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)11.15932178497314453) ) ) {
-          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3201.2772216796875) ) ) {
-            sum += (double)0.475150450000000002;
-          } else {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.286122560501098633) ) ) {
-              sum += (double)0.4243645333333333491;
-            } else {
-              sum += (double)0.260903566666666642;
-            }
-          }
-        } else {
-          sum += (double)0.1285787758620689503;
-        }
+      if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.5450000166893005371) ) ) {
+        sum += (double)0.1500525526315789615;
       } else {
-        if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.081818282604217529) ) ) {
-          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6589939892292022705) ) ) {
-            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.13385000079870224) ) ) {
-              sum += (double)0.3073814545454545688;
-            } else {
-              sum += (double)0.5497740833333332189;
-            }
+        if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.2894500046968460083) ) ) {
+          if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)2.031826436519622803) ) ) {
+            sum += (double)0.2582957129629629422;
           } else {
-            sum += (double)0.6310693684210527676;
+            sum += (double)0.3782573235294117708;
           }
         } else {
-          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.1114999987185001373) ) ) {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6068509817123413086) ) ) {
-              sum += (double)0.3472213970588235443;
-            } else {
-              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)15.13055515289306641) ) ) {
-                sum += (double)0.4952037840909090938;
+          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5698890089988708496) ) ) {
+            sum += (double)0.3502853611111110821;
+          } else {
+            sum += (double)0.4560641176470587865;
+          }
+        }
+      }
+    }
+  } else {
+    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4729205071926116943) ) ) {
+      if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.010357707738876343) ) ) {
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3339300006628036499) ) ) {
+          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)11.66211271286010742) ) ) {
+            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2452994957566261292) ) ) {
+              if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)24.97344303131103516) ) ) {
+                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2162764966487884521) ) ) {
+                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4752000123262405396) ) ) {
+                    sum += (double)0.3553585277777778773;
+                  } else {
+                    sum += (double)0.2270743828124999752;
+                  }
+                } else {
+                  sum += (double)0.1850683518518518589;
+                }
               } else {
-                sum += (double)0.399127249999999989;
+                sum += (double)0.4082009375000000273;
+              }
+            } else {
+              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.05095000006258487701) ) ) {
+                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)16.7925872802734375) ) ) {
+                  if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01319999992847442627) ) ) {
+                    sum += (double)0.4318184166666665935;
+                  } else {
+                    sum += (double)0.3743096093750000186;
+                  }
+                } else {
+                  sum += (double)0.4885229861111111682;
+                }
+              } else {
+                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1563500016927719116) ) ) {
+                  if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2875320017337799072) ) ) {
+                    sum += (double)0.2705346538461538275;
+                  } else {
+                    sum += (double)0.3667785555555556076;
+                  }
+                } else {
+                  if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-8742.363525390625) ) ) {
+                    sum += (double)0.3551872857142856499;
+                  } else {
+                    if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)7.884447574615478516) ) ) {
+                      sum += (double)0.383244727272727348;
+                    } else {
+                      sum += (double)0.4335477656249999701;
+                    }
+                  }
+                }
               }
             }
           } else {
-            sum += (double)0.2890920416666666881;
+            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)17.33372879028320312) ) ) {
+              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-19886.4365234375) ) ) {
+                sum += (double)0.3397073750000000891;
+              } else {
+                if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.3070000112056732178) ) ) {
+                  if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)29.54307174682617188) ) ) {
+                    sum += (double)0.2129687631578947304;
+                  } else {
+                    sum += (double)0.2793895192307692676;
+                  }
+                } else {
+                  sum += (double)0.08201017857142857415;
+                }
+              }
+            } else {
+              if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2297499999403953552) ) ) {
+                sum += (double)0.09602653124999999124;
+              } else {
+                sum += (double)0.1866422222222222371;
+              }
+            }
           }
+        } else {
+          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)10.80416488647460938) ) ) {
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.03640000149607658386) ) ) {
+              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0003999999862571712583) ) ) {
+                sum += (double)0.6070316323529412195;
+              } else {
+                if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)15.42631196975708008) ) ) {
+                  sum += (double)0.4901281363636363353;
+                } else {
+                  sum += (double)0.5545573571428571436;
+                }
+              }
+            } else {
+              if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6270000040531158447) ) ) {
+                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)4.009523868560791016) ) ) {
+                  sum += (double)0.4657742678571428208;
+                } else {
+                  sum += (double)0.3943017678571428264;
+                }
+              } else {
+                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.551193714141845703) ) ) {
+                  sum += (double)0.542668947368421084;
+                } else {
+                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7040999829769134521) ) ) {
+                    sum += (double)0.5122767352941176577;
+                  } else {
+                    sum += (double)0.4477317592592592321;
+                  }
+                }
+              }
+            }
+          } else {
+            if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)42.96285629272460938) ) ) {
+              sum += (double)0.3888113148148147902;
+            } else {
+              sum += (double)0.2791664642857142886;
+            }
+          }
+        }
+      } else {
+        if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)6.149999856948852539) ) ) {
+          if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.966652154922485352) ) ) {
+            if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.722852706909179688) ) ) {
+              sum += (double)0.1931587499999999624;
+            } else {
+              sum += (double)0.06039661538461538193;
+            }
+          } else {
+            sum += (double)0.3209999130434783021;
+          }
+        } else {
+          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-30044.84375) ) ) {
+            sum += (double)0.1697603333333333742;
+          } else {
+            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)8.256686687469482422) ) ) {
+              sum += (double)0.119955574999999981;
+            } else {
+              if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.856406211853027344) ) ) {
+                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-7372.614501953125) ) ) {
+                  sum += (double)0.0355794531250000004;
+                } else {
+                  sum += (double)0.006984588235294118298;
+                }
+              } else {
+                sum += (double)0.06312626315789472697;
+              }
+            }
+          }
+        }
+      }
+    } else {
+      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7049920260906219482) ) ) {
+        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.093493223190307617) ) ) {
+          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5410194993019104004) ) ) {
+            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)7.314393997192382812) ) ) {
+              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2991.5469970703125) ) ) {
+                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5006735026836395264) ) ) {
+                  sum += (double)0.5247981826923077131;
+                } else {
+                  sum += (double)0.4856759999999999966;
+                }
+              } else {
+                sum += (double)0.5842832685185185282;
+              }
+            } else {
+              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-9925.47900390625) ) ) {
+                sum += (double)0.460238671874999894;
+              } else {
+                sum += (double)0.3993662666666665806;
+              }
+            }
+          } else {
+            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-7726.69873046875) ) ) {
+              sum += (double)0.5400075199999999631;
+            } else {
+              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)6.399865150451660156) ) ) {
+                sum += (double)0.5927744722222222373;
+              } else {
+                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6520799994468688965) ) ) {
+                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.09144999831914901733) ) ) {
+                    if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.09210025519132614136) ) ) {
+                      sum += (double)0.6660567599999999144;
+                    } else {
+                      sum += (double)0.7236693888888888759;
+                    }
+                  } else {
+                    sum += (double)0.6340172608695652245;
+                  }
+                } else {
+                  sum += (double)0.7550182142857142509;
+                }
+              }
+            }
+          }
+        } else {
+          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)1.900967180728912354) ) ) {
+            sum += (double)0.4470141630434781854;
+          } else {
+            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2552.708984375) ) ) {
+              sum += (double)0.4509036000000000155;
+            } else {
+              sum += (double)0.1733524875000000132;
+            }
+          }
+        }
+      } else {
+        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5680897831916809082) ) ) {
+          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7397740185260772705) ) ) {
+            sum += (double)0.7147144027777777575;
+          } else {
+            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)0.7910891175270080566) ) ) {
+              sum += (double)0.8550203977272728961;
+            } else {
+              if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.0860590226948261261) ) ) {
+                sum += (double)0.7798372241379312175;
+              } else {
+                sum += (double)0.8315737916666667839;
+              }
+            }
+          }
+        } else {
+          sum += (double)0.6051431093750000434;
         }
       }
     }
   }
-  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4572215080261230469) ) ) {
-    if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.461220264434814453) ) ) {
-      if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2431045025587081909) ) ) {
-        if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1479744985699653625) ) ) {
-          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4116.89501953125) ) ) {
-            sum += (double)0.2455622173913043493;
-          } else {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)6.300892829895019531) ) ) {
-              sum += (double)0.1000911375000000103;
-            } else {
-              sum += (double)0.02419979166666666459;
-            }
-          }
+  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.995000004768371582) ) ) {
+    if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)6.405882358551025391) ) ) {
+      if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2549335062503814697) ) ) {
+        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.035119056701660156) ) ) {
+          sum += (double)0.08089252173913041855;
         } else {
-          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)4.488390207290649414) ) ) {
-            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3405.63720703125) ) ) {
-              sum += (double)0.3580218026315789559;
-            } else {
-              sum += (double)0.2697963928571428527;
-            }
-          } else {
-            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-11755.62158203125) ) ) {
-              sum += (double)0.3091803281249999591;
-            } else {
-              if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2833475619554519653) ) ) {
-                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1454381570219993591) ) ) {
-                  sum += (double)0.2127527916666666352;
-                } else {
-                  sum += (double)0.07809059615384614239;
-                }
-              } else {
-                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2125445008277893066) ) ) {
-                  sum += (double)0.287360187499999975;
-                } else {
-                  sum += (double)0.1604015000000000024;
-                }
-              }
-            }
-          }
+          sum += (double)0.1902208625000000042;
         }
       } else {
-        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.9590523242950439453) ) ) {
-          if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.003400000045076012611) ) ) {
-            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2542.70361328125) ) ) {
-              sum += (double)0.56539489285714295;
+        if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-765.98193359375) ) ) {
+          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5420745015144348145) ) ) {
+            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3553670048713684082) ) ) {
+              sum += (double)0.3814850775862068666;
             } else {
-              sum += (double)0.46660028333333331;
+              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2726.510498046875) ) ) {
+                sum += (double)0.3565732187499999761;
+              } else {
+                sum += (double)0.2474513942307692282;
+              }
             }
           } else {
-            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.222527503967285156) ) ) {
-              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01580000016838312149) ) ) {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)3.211111187934875488) ) ) {
-                  sum += (double)0.413259486111111074;
-                } else {
-                  sum += (double)0.3080184999999999729;
-                }
-              } else {
-                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1651.81793212890625) ) ) {
-                  if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)3.936813235282897949) ) ) {
-                    if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4730.330810546875) ) ) {
-                      sum += (double)0.3896404500000000271;
-                    } else {
-                      sum += (double)0.4713811089743589755;
-                    }
-                  } else {
-                    if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3187.4805908203125) ) ) {
-                      sum += (double)0.4236139696969696833;
-                    } else {
-                      sum += (double)0.3610138250000000104;
-                    }
-                  }
-                } else {
-                  sum += (double)0.5415489999999999471;
-                }
-              }
-            } else {
-              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4751.380859375) ) ) {
-                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3374990075826644897) ) ) {
-                  sum += (double)0.3632450833333333295;
-                } else {
-                  sum += (double)0.4278124199999999711;
-                }
-              } else {
-                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2979499995708465576) ) ) {
-                  sum += (double)0.2175874838709677406;
-                } else {
-                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2296.1324462890625) ) ) {
-                    if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6140500009059906006) ) ) {
-                      sum += (double)0.2992892083333333342;
-                    } else {
-                      sum += (double)0.460505352941176449;
-                    }
-                  } else {
-                    sum += (double)0.2568691029411764859;
-                  }
-                }
-              }
-            }
+            sum += (double)0.4960916052631578754;
           }
         } else {
-          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2812.8260498046875) ) ) {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3672800064086914062) ) ) {
-              sum += (double)0.196422116666666674;
-            } else {
-              sum += (double)0.3404995333333333263;
-            }
-          } else {
-            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)3.708333373069763184) ) ) {
-              sum += (double)0.1620908749999999954;
-            } else {
-              sum += (double)0.04123404464285714;
-            }
-          }
+          sum += (double)0.1373328076923076846;
         }
       }
     } else {
-      if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1472014933824539185) ) ) {
-        if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0004500000068219378591) ) ) {
-          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)16.10500001907348633) ) ) {
-            sum += (double)0.2715161190476190756;
-          } else {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)24.71789360046386719) ) ) {
-              sum += (double)0.09043042647058821548;
+      if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.3449999988079071045) ) ) {
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1165290027856826782) ) ) {
+          if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.2349999994039535522) ) ) {
+            if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.09500000253319740295) ) ) {
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.09086100012063980103) ) ) {
+                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.08530573546886444092) ) ) {
+                  sum += (double)0.00892976666666666849;
+                } else {
+                  if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8594999909400939941) ) ) {
+                    if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)40.70833206176757812) ) ) {
+                      sum += (double)0.00447558823529411922;
+                    } else {
+                      sum += (double)0.002745954301075270287;
+                    }
+                  } else {
+                    sum += (double)0.006698499999999999593;
+                  }
+                }
+              } else {
+                sum += (double)0.02016304166666666939;
+              }
             } else {
-              sum += (double)0.005448450000000000515;
+              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1304499953985214233) ) ) {
+                sum += (double)0.004464520000000000467;
+              } else {
+                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.07169250026345252991) ) ) {
+                  sum += (double)0.01383149999999999831;
+                } else {
+                  sum += (double)0.0399167499999999939;
+                }
+              }
             }
+          } else {
+            sum += (double)0.06221184999999999216;
           }
         } else {
-          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.07754799723625183105) ) ) {
-            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)27.34421443939208984) ) ) {
-              sum += (double)0.0180221000000000027;
+          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8357499837875366211) ) ) {
+            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)10.1099705696105957) ) ) {
+              sum += (double)0.09481949999999998713;
             } else {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.04002549871802330017) ) ) {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-51419.353515625) ) ) {
-                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-139472.765625) ) ) {
-                    sum += (double)0.002500000000000000486;
-                  } else {
-                    sum += (double)0.006863099999999999583;
-                  }
-                } else {
-                  if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1537633463740348816) ) ) {
-                    sum += (double)0.003034692307692307689;
-                  } else {
-                    sum += (double)0.002500000000000001353;
-                  }
-                }
+              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1334040015935897827) ) ) {
+                sum += (double)0.05853662499999998797;
               } else {
-                if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)77.00126266479492188) ) ) {
-                  if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.08395000174641609192) ) ) {
-                    sum += (double)0.003668124999999999945;
+                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3393335044384002686) ) ) {
+                  if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5586062371730804443) ) ) {
+                    if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-5317.30078125) ) ) {
+                      sum += (double)0.04592386764705883029;
+                    } else {
+                      sum += (double)0.01757563513513513836;
+                    }
                   } else {
-                    sum += (double)0.01249063157894736778;
+                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2297310009598731995) ) ) {
+                      sum += (double)0.002976700000000000526;
+                    } else {
+                      sum += (double)0.01097827272727272888;
+                    }
                   }
                 } else {
-                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-21111.7900390625) ) ) {
-                    sum += (double)0.005494895833333333403;
-                  } else {
-                    sum += (double)0.002635869565217391439;
-                  }
+                  sum += (double)0.04586957812499999759;
                 }
               }
             }
           } else {
-            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)31.32589626312255859) ) ) {
-              if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4444958865642547607) ) ) {
-                sum += (double)0.04010481818181817898;
-              } else {
-                sum += (double)0.1132448750000000087;
-              }
-            } else {
-              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-21659.8779296875) ) ) {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)26.26621723175048828) ) ) {
-                  sum += (double)0.09019582812499998825;
-                } else {
-                  if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4427233040332794189) ) ) {
-                    if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1873499974608421326) ) ) {
-                      sum += (double)0.008775147058823529883;
-                    } else {
-                      sum += (double)0.01500770588235294037;
-                    }
-                  } else {
-                    sum += (double)0.04461098437500000263;
-                  }
-                }
-              } else {
-                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3910.263427734375) ) ) {
-                  if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)55.08536720275878906) ) ) {
-                    sum += (double)0.02080472857142856916;
-                  } else {
-                    if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-12115.4892578125) ) ) {
-                      sum += (double)0.009745948275862070104;
-                    } else {
-                      sum += (double)0.002898020833333334045;
-                    }
-                  }
-                } else {
-                  sum += (double)0.04204896249999999502;
-                }
-              }
-            }
+            sum += (double)0.106086799999999995;
           }
         }
       } else {
-        if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)13.48809528350830078) ) ) {
-          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-9570.9716796875) ) ) {
-            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)12.68592119216918945) ) ) {
-              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-11081.38720703125) ) ) {
-                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2559999972581863403) ) ) {
-                  sum += (double)0.2398520833333333546;
-                } else {
-                  sum += (double)0.3760846160714286235;
-                }
-              } else {
-                sum += (double)0.4388713833333332537;
-              }
-            } else {
-              sum += (double)0.216287828947368449;
-            }
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5698890089988708496) ) ) {
+          if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0001500000071246176958) ) ) {
+            sum += (double)0.2372864464285714126;
           } else {
-            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)12.60317468643188477) ) ) {
-              if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.6478519439697265625) ) ) {
-                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.059800000861287117) ) ) {
-                  if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4351.128662109375) ) ) {
-                    sum += (double)0.1967408055555555646;
-                  } else {
-                    sum += (double)0.02623533999999999242;
-                  }
+            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1479744985699653625) ) ) {
+              if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2605500072240829468) ) ) {
+                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-23612.7802734375) ) ) {
+                  sum += (double)0.03171210416666666448;
                 } else {
-                  if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)11.29843759536743164) ) ) {
-                    sum += (double)0.2434195757575757235;
+                  if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)33.00891304016113281) ) ) {
+                    sum += (double)0.02603852777777777849;
                   } else {
-                    sum += (double)0.07437081250000000809;
+                    sum += (double)0.0107433064516129044;
                   }
                 }
               } else {
-                sum += (double)0.0308893749999999967;
+                sum += (double)0.05295046875000000708;
               }
             } else {
-              sum += (double)0.3218079852941176378;
+              if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.6789383888244628906) ) ) {
+                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-7165.858154296875) ) ) {
+                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.5678000152111053467) ) ) {
+                    if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4354500025510787964) ) ) {
+                      sum += (double)0.03383061111111110991;
+                    } else {
+                      sum += (double)0.07103675781250001764;
+                    }
+                  } else {
+                    if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-14130.380859375) ) ) {
+                      sum += (double)0.07500889814814816481;
+                    } else {
+                      sum += (double)0.1516735675675675576;
+                    }
+                  }
+                } else {
+                  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.9750000238418579102) ) ) {
+                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2795455008745193481) ) ) {
+                      sum += (double)0.1712163823529411488;
+                    } else {
+                      sum += (double)0.08207392045454543761;
+                    }
+                  } else {
+                    sum += (double)0.249154052631578915;
+                  }
+                }
+              } else {
+                if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.7199999988079071045) ) ) {
+                  if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.232098996639251709) ) ) {
+                    sum += (double)0.0304969999999999998;
+                  } else {
+                    sum += (double)0.1205474531249999814;
+                  }
+                } else {
+                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3948.9285888671875) ) ) {
+                    if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.9650000035762786865) ) ) {
+                      sum += (double)0.01755113636363636251;
+                    } else {
+                      sum += (double)0.0344497934782608678;
+                    }
+                  } else {
+                    sum += (double)0.01017990000000000041;
+                  }
+                }
+              }
             }
           }
         } else {
-          if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.220638670027256012) ) ) {
-            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-17865.8623046875) ) ) {
-              sum += (double)0.3013703076923076596;
-            } else {
-              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)16.0801396369934082) ) ) {
-                sum += (double)0.1713137083333333144;
-              } else {
-                sum += (double)0.04368830769230768601;
-              }
-            }
-          } else {
-            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3513.2430419921875) ) ) {
-              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2209069952368736267) ) ) {
-                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1548165008425712585) ) ) {
-                  sum += (double)0.1203775000000000123;
-                } else {
-                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.3930500000715255737) ) ) {
-                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1948949992656707764) ) ) {
-                      sum += (double)0.0167956527777777774;
-                    } else {
-                      sum += (double)0.03978002777777777527;
-                    }
-                  } else {
-                    if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4838169962167739868) ) ) {
-                      sum += (double)0.03789526162790697594;
-                    } else {
-                      sum += (double)0.1026876973684210659;
-                    }
-                  }
-                }
-              } else {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)18.76570034027099609) ) ) {
-                  if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)23.51341342926025391) ) ) {
-                    sum += (double)0.138872583333333327;
-                  } else {
-                    sum += (double)0.2696113823529411313;
-                  }
-                } else {
-                  if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.3278848379850387573) ) ) {
-                    sum += (double)0.1871505238095238222;
-                  } else {
-                    if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)93.63333511352539062) ) ) {
-                      sum += (double)0.1031223571428571684;
-                    } else {
-                      sum += (double)0.02990780128205127592;
-                    }
-                  }
-                }
-              }
-            } else {
-              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2604444921016693115) ) ) {
-                sum += (double)0.002500000000000000052;
-              } else {
-                sum += (double)0.01842994696969697116;
-              }
-            }
-          }
+          sum += (double)0.3464497500000000008;
         }
       }
     }
   } else {
-    if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4212084412574768066) ) ) {
-      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.621632993221282959) ) ) {
-        if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01069999998435378075) ) ) {
-          if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7396999895572662354) ) ) {
-            sum += (double)0.5347345781250000263;
-          } else {
-            sum += (double)0.6699771696428572509;
-          }
-        } else {
-          if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)74.22777938842773438) ) ) {
-            if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2616493105888366699) ) ) {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5443184971809387207) ) ) {
-                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.485868990421295166) ) ) {
-                  sum += (double)0.5358705394736841265;
+    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4561454951763153076) ) ) {
+      if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.9545539617538452148) ) ) {
+        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)10.85074520111083984) ) ) {
+          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2427854984998703003) ) ) {
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01440000021830201149) ) ) {
+              sum += (double)0.4480503260869566073;
+            } else {
+              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-11929.9404296875) ) ) {
+                sum += (double)0.320336374999999951;
+              } else {
+                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-8976.74267578125) ) ) {
+                  sum += (double)0.1715467236842105336;
                 } else {
-                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-5916.149658203125) ) ) {
-                    sum += (double)0.4951477916666667811;
+                  if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.477477148175239563) ) ) {
+                    sum += (double)0.3094104999999999217;
                   } else {
-                    sum += (double)0.4214166176470588998;
+                    sum += (double)0.1878045666666666724;
+                  }
+                }
+              }
+            }
+          } else {
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0003999999862571712583) ) ) {
+              sum += (double)0.5787591521739130496;
+            } else {
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3500795066356658936) ) ) {
+                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.283674955368041992) ) ) {
+                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4607000052928924561) ) ) {
+                    sum += (double)0.3726687500000000486;
+                  } else {
+                    if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6119999885559082031) ) ) {
+                      sum += (double)0.4453222903225806939;
+                    } else {
+                      sum += (double)0.4070359891304348721;
+                    }
+                  }
+                } else {
+                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1422999948263168335) ) ) {
+                    sum += (double)0.2992561287878787724;
+                  } else {
+                    sum += (double)0.3946020865384614051;
                   }
                 }
               } else {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2671.9010009765625) ) ) {
-                  sum += (double)0.550952718749999848;
+                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)30.14204502105712891) ) ) {
+                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1596499979496002197) ) ) {
+                    if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2396047860383987427) ) ) {
+                      sum += (double)0.4585471034482758168;
+                    } else {
+                      sum += (double)0.5102524999999999977;
+                    }
+                  } else {
+                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4107555001974105835) ) ) {
+                      sum += (double)0.4821140769230769507;
+                    } else {
+                      sum += (double)0.3860722500000000057;
+                    }
+                  }
                 } else {
-                  sum += (double)0.6013322708333331823;
-                }
-              }
-            } else {
-              sum += (double)0.6099610131578948602;
-            }
-          } else {
-            sum += (double)0.3807977500000000459;
-          }
-        }
-      } else {
-        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.660869598388671875) ) ) {
-          if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7418999969959259033) ) ) {
-            sum += (double)0.7238181250000000899;
-          } else {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)0.8281752169132232666) ) ) {
-              sum += (double)0.8522410972222221881;
-            } else {
-              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6932689845561981201) ) ) {
-                sum += (double)0.7447500999999997484;
-              } else {
-                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)11.57857131958007812) ) ) {
-                  sum += (double)0.7834470729166667091;
-                } else {
-                  sum += (double)0.8268748666666666525;
+                  sum += (double)0.3755660000000000109;
                 }
               }
             }
           }
         } else {
-          if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7694000005722045898) ) ) {
-            sum += (double)0.7151990869565217901;
+          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)32.63336181640625) ) ) {
+            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3333054929971694946) ) ) {
+              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0002999999924213625491) ) ) {
+                sum += (double)0.3925815138888889;
+              } else {
+                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1504370346665382385) ) ) {
+                  sum += (double)0.3114615288461538567;
+                } else {
+                  if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.17553749680519104) ) ) {
+                    sum += (double)0.1173134375000000063;
+                  } else {
+                    if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4652500003576278687) ) ) {
+                      sum += (double)0.1518108750000000118;
+                    } else {
+                      sum += (double)0.2475401323529411723;
+                    }
+                  }
+                }
+              }
+            } else {
+              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-15424.068359375) ) ) {
+                sum += (double)0.4268644107142857136;
+              } else {
+                sum += (double)0.3170504090909090911;
+              }
+            }
           } else {
-            sum += (double)0.5600101630434782818;
+            sum += (double)0.08757870652173913029;
+          }
+        }
+      } else {
+        if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.855637550354003906) ) ) {
+          sum += (double)0.276613104166666679;
+        } else {
+          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-21581.0751953125) ) ) {
+            sum += (double)0.2157574431818182203;
+          } else {
+            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)7.897893905639648438) ) ) {
+              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2798.5384521484375) ) ) {
+                sum += (double)0.2121355526315789608;
+              } else {
+                sum += (double)0.05086036111111110619;
+              }
+            } else {
+              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.233950003981590271) ) ) {
+                sum += (double)0.06395316666666665817;
+              } else {
+                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)19.72168827056884766) ) ) {
+                  sum += (double)0.03623590999999999618;
+                } else {
+                  sum += (double)0.01557162499999999866;
+                }
+              }
+            }
           }
         }
       }
     } else {
-      if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.625709176063537598) ) ) {
-        if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.06945000216364860535) ) ) {
-          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.1815000027418136597) ) ) {
-            sum += (double)0.4123624814814815243;
-          } else {
-            sum += (double)0.2025597727272727411;
-          }
-        } else {
-          if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)30.78269100189208984) ) ) {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5394719839096069336) ) ) {
-              sum += (double)0.468809552083333303;
+      if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5700002610683441162) ) ) {
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6491389870643615723) ) ) {
+          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5366494953632354736) ) ) {
+            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-10253.5322265625) ) ) {
+              sum += (double)0.4298746093749999386;
             } else {
-              sum += (double)0.5762526296296295314;
-            }
-          } else {
-            sum += (double)0.3882559210526315696;
-          }
-        }
-      } else {
-        if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)2.087804913520812988) ) ) {
-          sum += (double)0.4349324404761903962;
-        } else {
-          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.05845000036060810089) ) ) {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5461035072803497314) ) ) {
-              sum += (double)0.09693370238095237734;
-            } else {
-              sum += (double)0.1921474499999999697;
-            }
-          } else {
-            sum += (double)0.3233034027777777486;
-          }
-        }
-      }
-    }
-  }
-  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3839095085859298706) ) ) {
-    if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.93996429443359375) ) ) {
-      if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2083.4365234375) ) ) {
-        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2938529998064041138) ) ) {
-          if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-5378.1318359375) ) ) {
-            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.07255000248551368713) ) ) {
-              if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.3539178669452667236) ) ) {
-                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0171500006690621376) ) ) {
-                  sum += (double)0.3933536805555555849;
-                } else {
-                  sum += (double)0.3271685357142856687;
-                }
+              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4688404947519302368) ) ) {
+                sum += (double)0.6041304374999999505;
               } else {
-                sum += (double)0.4534688333333332655;
-              }
-            } else {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2441440001130104065) ) ) {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-8573.837890625) ) ) {
-                  sum += (double)0.2468673289473683752;
-                } else {
-                  sum += (double)0.1217620138888889092;
-                }
-              } else {
-                sum += (double)0.3608924772727272745;
-              }
-            }
-          } else {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)4.081829309463500977) ) ) {
-              sum += (double)0.4350147857142857566;
-            } else {
-              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01805000007152557373) ) ) {
-                sum += (double)0.2798728977272727514;
-              } else {
-                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)22.61418247222900391) ) ) {
-                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.3511500060558319092) ) ) {
-                    sum += (double)0.05312443421052631676;
+                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5015920102596282959) ) ) {
+                  if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.195782877504825592) ) ) {
+                    if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4861259907484054565) ) ) {
+                      sum += (double)0.5546822934782609238;
+                    } else {
+                      sum += (double)0.4656821458333333386;
+                    }
                   } else {
-                    sum += (double)0.2136882327586206998;
+                    sum += (double)0.4420161413043477983;
                   }
                 } else {
-                  sum += (double)0.04806457142857143566;
+                  sum += (double)0.5627756363636364778;
                 }
+              }
+            }
+          } else {
+            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3459.4644775390625) ) ) {
+              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.470833301544189453) ) ) {
+                sum += (double)0.6048958055555554436;
+              } else {
+                sum += (double)0.5141172894736841803;
+              }
+            } else {
+              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1508.35369873046875) ) ) {
+                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.803846120834350586) ) ) {
+                  sum += (double)0.6452399861111112189;
+                } else {
+                  sum += (double)0.6201236458333333479;
+                }
+              } else {
+                sum += (double)0.7109132894736841513;
               }
             }
           }
         } else {
-          if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01405000034719705582) ) ) {
-            sum += (double)0.532650089999999965;
+          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7417580187320709229) ) ) {
+            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.227642178535461426) ) ) {
+              sum += (double)0.7451278515624999432;
+            } else {
+              sum += (double)0.6407020681818180741;
+            }
           } else {
-            if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4253202527761459351) ) ) {
-              if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1236499994993209839) ) ) {
-                if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)14.01013278961181641) ) ) {
-                  sum += (double)0.4259310267857143728;
-                } else {
-                  sum += (double)0.3278905000000000847;
-                }
+            if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.07640000060200691223) ) ) {
+              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)0.8496383428573608398) ) ) {
+                sum += (double)0.8485841617647059687;
               } else {
-                sum += (double)0.4415970151515151154;
+                sum += (double)0.8030951714285713416;
               }
             } else {
-              sum += (double)0.3287150576923077439;
+              sum += (double)0.7617537777777778629;
             }
           }
         }
       } else {
-        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.551407575607299805) ) ) {
-          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2441269978880882263) ) ) {
-            sum += (double)0.09867332894736842441;
+        if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3302.6025390625) ) ) {
+          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6603384912014007568) ) ) {
+            sum += (double)0.4455237291666667154;
           } else {
-            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6431999802589416504) ) ) {
-              sum += (double)0.1683580714285714541;
-            } else {
-              sum += (double)0.419417718749999946;
-            }
+            sum += (double)0.6410047307692307017;
           }
         } else {
-          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2464435026049613953) ) ) {
-            sum += (double)0.02064504310344827606;
-          } else {
-            sum += (double)0.1104206388888888807;
-          }
-        }
-      }
-    } else {
-      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2055095061659812927) ) ) {
-        if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.07202149927616119385) ) ) {
-          if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)24.12853145599365234) ) ) {
-            sum += (double)0.06605083823529410425;
-          } else {
-            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.04502699896693229675) ) ) {
-              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8690000176429748535) ) ) {
-                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.03576250001788139343) ) ) {
-                  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.02221600059419870377) ) ) {
-                    sum += (double)0.002500000000000001353;
-                  } else {
-                    sum += (double)0.003143780000000000532;
-                  }
-                } else {
-                  sum += (double)0.004950031250000000438;
-                }
-              } else {
-                sum += (double)0.006513750000000000442;
-              }
-            } else {
-              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)47.32678413391113281) ) ) {
-                sum += (double)0.02018612499999999574;
-              } else {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-20679.5390625) ) ) {
-                  sum += (double)0.01008537500000000059;
-                } else {
-                  if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)108.8578948974609375) ) ) {
-                    sum += (double)0.006208468750000000445;
-                  } else {
-                    sum += (double)0.002664473684210526445;
-                  }
-                }
-              }
-            }
-          }
-        } else {
-          if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0004500000068219378591) ) ) {
-            sum += (double)0.2248105000000000242;
-          } else {
-            if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.22790546715259552) ) ) {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1734884977340698242) ) ) {
-                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1229124963283538818) ) ) {
-                  sum += (double)0.01485465217391304313;
-                } else {
-                  sum += (double)0.0592214696969696891;
-                }
-              } else {
-                sum += (double)0.2435769062500000026;
-              }
-            } else {
-              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)16.36350345611572266) ) ) {
-                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.3356008380651473999) ) ) {
-                  sum += (double)0.03667166304347826283;
-                } else {
-                  if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4669053852558135986) ) ) {
-                    sum += (double)0.1682851964285713986;
-                  } else {
-                    sum += (double)0.05366028571428570898;
-                  }
-                }
-              } else {
-                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-10292.85986328125) ) ) {
-                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-12945.79150390625) ) ) {
-                    if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)133.7333297729492188) ) ) {
-                      sum += (double)0.05216006402439024581;
-                    } else {
-                      sum += (double)0.02130579591836733941;
-                    }
-                  } else {
-                    sum += (double)0.1148226764705882336;
-                  }
-                } else {
-                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1708000004291534424) ) ) {
-                    if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)40.22174072265625) ) ) {
-                      sum += (double)0.01020409090909091092;
-                    } else {
-                      sum += (double)0.002884671428571429757;
-                    }
-                  } else {
-                    sum += (double)0.01637298333333333036;
-                  }
-                }
-              }
-            }
-          }
-        }
-      } else {
-        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.157867431640625) ) ) {
-          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)22.3970184326171875) ) ) {
-            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-17966.021484375) ) ) {
-              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-23839.0419921875) ) ) {
-                sum += (double)0.3002778583333333695;
-              } else {
-                sum += (double)0.3959326166666666258;
-              }
-            } else {
-              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2138.00994873046875) ) ) {
-                if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4039500057697296143) ) ) {
-                  sum += (double)0.3188202222222222271;
-                } else {
-                  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2990144938230514526) ) ) {
-                    if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-7535.16015625) ) ) {
-                      sum += (double)0.1662492888888889297;
-                    } else {
-                      sum += (double)0.08062243918918919616;
-                    }
-                  } else {
-                    if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)12.53629779815673828) ) ) {
-                      sum += (double)0.3171174411764705603;
-                    } else {
-                      sum += (double)0.2156830468750000063;
-                    }
-                  }
-                }
-              } else {
-                sum += (double)0.03203324999999999922;
-              }
-            }
-          } else {
-            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)68.40288352966308594) ) ) {
-              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-25032.13671875) ) ) {
-                sum += (double)0.2045486363636363214;
-              } else {
-                if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6319000124931335449) ) ) {
-                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.344850003719329834) ) ) {
-                    sum += (double)0.1089659687500000029;
-                  } else {
-                    if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1819999963045120239) ) ) {
-                      sum += (double)0.01697092857142857084;
-                    } else {
-                      sum += (double)0.08340332352941176586;
-                    }
-                  }
-                } else {
-                  sum += (double)0.1453270499999999854;
-                }
-              }
-            } else {
-              sum += (double)0.03713730833333333398;
-            }
-          }
-        } else {
-          if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.08655000105500221252) ) ) {
-            sum += (double)0.0738347999999999921;
-          } else {
-            if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.576317310333251953) ) ) {
-              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.2035000026226043701) ) ) {
-                sum += (double)0.01132178846153846126;
-              } else {
-                sum += (double)0.00333406250000000022;
-              }
-            } else {
-              sum += (double)0.01916880952380952199;
-            }
-          }
-        }
-      }
-    }
-  } else {
-    if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.6061426103115081787) ) ) {
-      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.622563481330871582) ) ) {
-        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)11.12297296524047852) ) ) {
-          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5057889819145202637) ) ) {
-            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1172.25115966796875) ) ) {
-              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0001499999962106812745) ) ) {
-                sum += (double)0.575092267857142958;
-              } else {
-                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4559770077466964722) ) ) {
-                  if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3784.2598876953125) ) ) {
-                    sum += (double)0.4162627300000000252;
-                  } else {
-                    if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)4.644634723663330078) ) ) {
-                      sum += (double)0.465085749999999909;
-                    } else {
-                      sum += (double)0.5330125340909090959;
-                    }
-                  }
-                } else {
-                  if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)26.168182373046875) ) ) {
-                    if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.05045000091195106506) ) ) {
-                      sum += (double)0.4079873392857142345;
-                    } else {
-                      sum += (double)0.5191397016129032371;
-                    }
-                  } else {
-                    sum += (double)0.5713370588235294756;
-                  }
-                }
-              }
-            } else {
-              sum += (double)0.3929321842105262808;
-            }
-          } else {
-            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)5.56214594841003418) ) ) {
-              sum += (double)0.5437356249999999447;
-            } else {
-              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8339000046253204346) ) ) {
-                if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.05045000091195106506) ) ) {
-                  sum += (double)0.6826439545454546787;
-                } else {
-                  sum += (double)0.6311549210526316012;
-                }
-              } else {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)3.595029234886169434) ) ) {
-                  sum += (double)0.6454073552631578448;
-                } else {
-                  sum += (double)0.5058484218750000094;
-                }
-              }
-            }
-          }
-        } else {
-          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.694749981164932251) ) ) {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5046874880790710449) ) ) {
-              sum += (double)0.3145310147058824057;
-            } else {
-              sum += (double)0.1886021944444444542;
-            }
-          } else {
-            sum += (double)0.3887191785714285142;
-          }
-        }
-      } else {
-        if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)31.78940200805664062) ) ) {
-          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7414509952068328857) ) ) {
-            if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)12.05229568481445312) ) ) {
-              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2440.659912109375) ) ) {
-                sum += (double)0.6655132321428572917;
-              } else {
-                sum += (double)0.7185124999999999984;
-              }
-            } else {
-              sum += (double)0.749436238095238072;
-            }
-          } else {
-            if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.08980000019073486328) ) ) {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.8550899922847747803) ) ) {
-                sum += (double)0.8139177300000000059;
-              } else {
-                sum += (double)0.8785612142857140983;
-              }
-            } else {
-              sum += (double)0.7325327833333333816;
-            }
-          }
-        } else {
-          sum += (double)0.563201279411764788;
-        }
-      }
-    } else {
-      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5522460043430328369) ) ) {
-        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.75) ) ) {
-          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2833.0113525390625) ) ) {
-            sum += (double)0.4297972426470588192;
-          } else {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4275265038013458252) ) ) {
-              sum += (double)0.04794782291666666724;
-            } else {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.476446002721786499) ) ) {
-                sum += (double)0.196062924999999999;
-              } else {
-                sum += (double)0.3364382115384615957;
-              }
-            }
-          }
-        } else {
-          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4894144982099533081) ) ) {
-            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.1450000032782554626) ) ) {
-              sum += (double)0.1623603749999999735;
-            } else {
-              sum += (double)0.05064644444444443144;
-            }
-          } else {
-            sum += (double)0.1781144861111111366;
-          }
-        }
-      } else {
-        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7571980059146881104) ) ) {
           if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.127672433853149414) ) ) {
-            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-483.599456787109375) ) ) {
-              sum += (double)0.4330965925925926996;
-            } else {
-              sum += (double)0.4846520833333333722;
-            }
+            sum += (double)0.4470919843749999734;
           } else {
-            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1588.35455322265625) ) ) {
-              if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.03309999965131282806) ) ) {
-                sum += (double)0.4768639558823528635;
-              } else {
-                sum += (double)0.3822330874999999573;
-              }
+            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.0778499990701675415) ) ) {
+              sum += (double)0.1412326875000000093;
             } else {
-              sum += (double)0.1172185357142857126;
+              sum += (double)0.3204983214285713755;
             }
           }
-        } else {
-          sum += (double)0.574705616666666641;
         }
       }
     }
   }
-  if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.1796875) ) ) {
-    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4768949896097183228) ) ) {
-      if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.267892003059387207) ) ) {
-        if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3888.4378662109375) ) ) {
-          if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.05855000019073486328) ) ) {
-            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.006299999775364995003) ) ) {
-              sum += (double)0.4123383888888888515;
-            } else {
-              sum += (double)0.2889621826923076675;
-            }
-          } else {
-            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2352029979228973389) ) ) {
-              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2075499966740608215) ) ) {
-                sum += (double)0.2144296375000000199;
-              } else {
-                sum += (double)0.1197006136363636397;
-              }
-            } else {
-              sum += (double)0.2793677307692308265;
-            }
-          }
-        } else {
-          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)4.488390207290649414) ) ) {
-            sum += (double)0.3045235795454545591;
-          } else {
-            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2482860013842582703) ) ) {
-              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)17.65320110321044922) ) ) {
-                sum += (double)0.1141233437499999948;
-              } else {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)7.138888835906982422) ) ) {
-                  sum += (double)0.05332744117647058441;
-                } else {
-                  sum += (double)0.01258794444444444501;
-                }
-              }
-            } else {
-              sum += (double)0.1871513863636363739;
-            }
-          }
-        }
+  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.995000004768371582) ) ) {
+    if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.78423762321472168) ) ) {
+      if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.5850000083446502686) ) ) {
+        sum += (double)0.09052713043478258226;
       } else {
-        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.9590523242950439453) ) ) {
-          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3675854951143264771) ) ) {
-            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.00439999997615814209) ) ) {
-              sum += (double)0.5080490833333333178;
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.481987491250038147) ) ) {
+          if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)18.10267829895019531) ) ) {
+            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)4.293749809265136719) ) ) {
+              sum += (double)0.218345375000000036;
             } else {
-              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)7.341767549514770508) ) ) {
-                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)28.39692306518554688) ) ) {
-                  if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7411499917507171631) ) ) {
-                    if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3036939948797225952) ) ) {
-                      sum += (double)0.3467421381578947859;
-                    } else {
-                      sum += (double)0.4200370958333331517;
-                    }
-                  } else {
-                    sum += (double)0.2787400875000000111;
-                  }
-                } else {
-                  sum += (double)0.483724968749999984;
-                }
-              } else {
-                sum += (double)0.2859323369565217599;
-              }
+              sum += (double)0.165994132352941165;
             }
           } else {
-            if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.253616824746131897) ) ) {
-              if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.719550013542175293) ) ) {
-                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.200156576931476593) ) ) {
-                  sum += (double)0.5182613012820512788;
-                } else {
-                  sum += (double)0.5688070833333332965;
-                }
-              } else {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.638198614120483398) ) ) {
-                  if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01209999993443489075) ) ) {
-                    sum += (double)0.451977765625000083;
-                  } else {
-                    sum += (double)0.527244825000000028;
-                  }
-                } else {
-                  sum += (double)0.3854899821428571238;
-                }
-              }
+            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8528999984264373779) ) ) {
+              sum += (double)0.4123611190476190735;
             } else {
-              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)4.021428585052490234) ) ) {
-                sum += (double)0.5119135865384614181;
-              } else {
-                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3104.9818115234375) ) ) {
-                  sum += (double)0.4523057142857142554;
-                } else {
-                  sum += (double)0.2636786071428571243;
-                }
-              }
+              sum += (double)0.2928640625000000219;
             }
           }
         } else {
-          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3483.4307861328125) ) ) {
-            sum += (double)0.3290215441176470024;
-          } else {
-            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)3.234565258026123047) ) ) {
-              sum += (double)0.2272794375000000144;
-            } else {
-              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3766809999942779541) ) ) {
-                sum += (double)0.02361229545454545872;
-              } else {
-                sum += (double)0.09789578571428568521;
-              }
-            }
-          }
+          sum += (double)0.4376298409090909058;
         }
       }
     } else {
-      if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5325800478458404541) ) ) {
-        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6513555049896240234) ) ) {
-          if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1754.94049072265625) ) ) {
-            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5366494953632354736) ) ) {
-              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8314499855041503906) ) ) {
-                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1377379894256591797) ) ) {
-                  sum += (double)0.578420552631578988;
-                } else {
-                  sum += (double)0.5071508500000000419;
-                }
-              } else {
-                sum += (double)0.4192717000000000804;
-              }
-            } else {
-              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)7.649303197860717773) ) ) {
-                sum += (double)0.5342980694444443568;
-              } else {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)3.429985165596008301) ) ) {
-                  sum += (double)0.6347413676470587962;
-                } else {
-                  sum += (double)0.5814362272727273684;
-                }
-              }
-            }
-          } else {
-            if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1308966800570487976) ) ) {
-              sum += (double)0.6926351562500000503;
-            } else {
-              sum += (double)0.5581514499999999934;
-            }
-          }
-        } else {
-          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7179419994354248047) ) ) {
-            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.647769808769226074) ) ) {
-              sum += (double)0.7130540441176470567;
-            } else {
-              sum += (double)0.6657138409090908038;
-            }
-          } else {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)1.205824196338653564) ) ) {
-              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)0.8281752169132232666) ) ) {
-                sum += (double)0.856959347222222223;
-              } else {
-                sum += (double)0.8134079687500000988;
-              }
-            } else {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.8078870177268981934) ) ) {
-                sum += (double)0.7383583452380951817;
-              } else {
-                sum += (double)0.8084638026315789094;
-              }
-            }
-          }
-        }
-      } else {
-        if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3698.1630859375) ) ) {
-          sum += (double)0.5584837375000000215;
-        } else {
-          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.765894293785095215) ) ) {
-            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6098825037479400635) ) ) {
-              sum += (double)0.3896662692307692466;
-            } else {
-              sum += (double)0.4804810357142857979;
-            }
-          } else {
-            sum += (double)0.2124311041666666622;
-          }
-        }
-      }
-    }
-  } else {
-    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5455529987812042236) ) ) {
-      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1951034963130950928) ) ) {
-        if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)23.36127758026123047) ) ) {
-          if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4875.364990234375) ) ) {
-            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0344000011682510376) ) ) {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1048084981739521027) ) ) {
-                sum += (double)0.0981196249999999881;
-              } else {
-                sum += (double)0.2858605535714285328;
-              }
-            } else {
-              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1380414962768554688) ) ) {
-                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1184634976089000702) ) ) {
-                  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.08831200003623962402) ) ) {
-                    sum += (double)0.005605531250000000271;
-                  } else {
-                    sum += (double)0.01773397619047619236;
-                  }
-                } else {
-                  sum += (double)0.03700753333333333533;
-                }
-              } else {
-                if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.659550011157989502) ) ) {
-                  if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-12143.49072265625) ) ) {
-                    sum += (double)0.1107241785714285637;
-                  } else {
-                    sum += (double)0.048663096153846154;
-                  }
-                } else {
-                  sum += (double)0.1645648333333333269;
-                }
-              }
-            }
-          } else {
-            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.125330999493598938) ) ) {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.08973300084471702576) ) ) {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)13.22916650772094727) ) ) {
-                  sum += (double)0.008433840909090909929;
-                } else {
-                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6830499768257141113) ) ) {
-                    sum += (double)0.003231208333333332895;
-                  } else {
-                    sum += (double)0.002500000000000000052;
-                  }
-                }
-              } else {
-                sum += (double)0.01981939062500000237;
-              }
-            } else {
-              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)15.73508787155151367) ) ) {
-                if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.08570000156760215759) ) ) {
-                  sum += (double)0.05041208749999999406;
-                } else {
-                  sum += (double)0.09433167857142857327;
-                }
-              } else {
-                sum += (double)0.01166747619047619165;
-              }
-            }
-          }
-        } else {
-          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.07671299949288368225) ) ) {
-            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)50.72115325927734375) ) ) {
-              sum += (double)0.02161657692307692238;
-            } else {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.04489400051534175873) ) ) {
-                if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)95.70531845092773438) ) ) {
-                  sum += (double)0.004905961538461539595;
-                } else {
-                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1503999978303909302) ) ) {
-                    sum += (double)0.002500000000000001787;
-                  } else {
-                    sum += (double)0.003303249999999999763;
-                  }
-                }
-              } else {
-                if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.5112999975681304932) ) ) {
-                  sum += (double)0.002500000000000000052;
-                } else {
-                  sum += (double)0.01314638095238095453;
-                }
-              }
-            }
-          } else {
-            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-21919.9287109375) ) ) {
-              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)33.99867057800292969) ) ) {
-                sum += (double)0.1049190131578947166;
-              } else {
-                if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.3515000045299530029) ) ) {
-                  sum += (double)0.05852493333333332742;
-                } else {
-                  if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)316.6353302001953125) ) ) {
-                    if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-47213.59375) ) ) {
-                      sum += (double)0.039508519230769229;
-                    } else {
-                      sum += (double)0.01059127500000000069;
-                    }
-                  } else {
-                    sum += (double)0.004574021739130434971;
-                  }
-                }
-              }
-            } else {
-              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)25.88247871398925781) ) ) {
-                sum += (double)0.02649894230769230669;
-              } else {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)39.193939208984375) ) ) {
-                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.135499998927116394) ) ) {
-                    sum += (double)0.005299357142857142981;
-                  } else {
-                    sum += (double)0.01925179411764706139;
-                  }
-                } else {
-                  sum += (double)0.003323375000000000374;
-                }
-              }
-            }
-          }
-        }
-      } else {
-        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.7498322725296020508) ) ) {
-          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3275610059499740601) ) ) {
-            if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.205894172191619873) ) ) {
-              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-8612.9306640625) ) ) {
-                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1120096743106842041) ) ) {
-                  sum += (double)0.2250915625000000087;
-                } else {
-                  sum += (double)0.351290420454545449;
-                }
-              } else {
-                sum += (double)0.1272770657894736757;
-              }
-            } else {
-              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.09715000167489051819) ) ) {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)13.12247323989868164) ) ) {
-                  sum += (double)0.1115068571428571437;
-                } else {
-                  if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.24364500492811203) ) ) {
-                    sum += (double)0.03026796000000000347;
-                  } else {
-                    sum += (double)0.06896057407407407691;
-                  }
-                }
-              } else {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)18.45555591583251953) ) ) {
-                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2766999900341033936) ) ) {
-                    if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2441904991865158081) ) ) {
-                      sum += (double)0.1629683529411764809;
-                    } else {
-                      sum += (double)0.2201590156250000097;
-                    }
-                  } else {
-                    sum += (double)0.2865139047619047474;
-                  }
-                } else {
-                  if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.3500839024782180786) ) ) {
-                    sum += (double)0.1615688977272727311;
-                  } else {
-                    if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2513474971055984497) ) ) {
-                      sum += (double)0.03237127631578947534;
-                    } else {
-                      sum += (double)0.1279260000000000119;
-                    }
-                  }
-                }
-              }
-            }
-          } else {
-            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-7749.022216796875) ) ) {
-              if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)72.33131217956542969) ) ) {
-                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2710050493478775024) ) ) {
-                  sum += (double)0.3598057380952380813;
-                } else {
-                  sum += (double)0.5081489000000000145;
-                }
-              } else {
-                sum += (double)0.1569336562499999699;
-              }
-            } else {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.417631000280380249) ) ) {
-                sum += (double)0.1110907222222222157;
-              } else {
-                sum += (double)0.2428655555555555567;
-              }
-            }
-          }
-        } else {
-          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4245499968528747559) ) ) {
-            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.05370000004768371582) ) ) {
-              sum += (double)0.1129834629629629661;
-            } else {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3837545067071914673) ) ) {
-                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.02524999994784593582) ) ) {
-                  sum += (double)0.08505610000000000948;
-                } else {
-                  if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-18621.4052734375) ) ) {
-                    sum += (double)0.05323869736842105904;
-                  } else {
-                    if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.033021330833435059) ) ) {
-                      sum += (double)0.03566573684210525702;
-                    } else {
-                      sum += (double)0.01005917647058823111;
-                    }
-                  }
-                }
-              } else {
-                if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.2157999947667121887) ) ) {
-                  sum += (double)0.04673756034482757366;
-                } else {
-                  sum += (double)0.1172978676470588233;
-                }
-              }
-            }
-          } else {
-            sum += (double)0.1370621999999999674;
-          }
-        }
-      }
-    } else {
-      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.699848473072052002) ) ) {
-        if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1511500030755996704) ) ) {
-          if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.1277499962598085403) ) ) {
-            sum += (double)0.3339094843750000097;
-          } else {
-            sum += (double)0.2033270535714285787;
-          }
-        } else {
-          sum += (double)0.4610469673913044075;
-        }
-      } else {
-        sum += (double)0.6418361923076923992;
-      }
-    }
-  }
-  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3831595033407211304) ) ) {
-    if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.46775054931640625) ) ) {
-      if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1856.134033203125) ) ) {
-        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2707985043525695801) ) ) {
-          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1508779972791671753) ) ) {
-            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4116.6485595703125) ) ) {
-              sum += (double)0.2067153064516128735;
-            } else {
-              sum += (double)0.02835423529411764884;
-            }
-          } else {
-            if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.05718076229095459) ) ) {
-              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.03490000031888484955) ) ) {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-5399.415771484375) ) ) {
-                  sum += (double)0.451757791666666686;
-                } else {
-                  sum += (double)0.3271391323529411754;
-                }
-              } else {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.118689298629760742) ) ) {
-                  sum += (double)0.3687686590909091122;
-                } else {
-                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4918.664306640625) ) ) {
-                    sum += (double)0.2608757962962962584;
-                  } else {
-                    sum += (double)0.1566639886363636602;
-                  }
-                }
-              }
-            } else {
-              sum += (double)0.07877360714285715215;
-            }
-          }
-        } else {
-          if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.9928456246852874756) ) ) {
-            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01740000024437904358) ) ) {
-              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)4.518010854721069336) ) ) {
-                sum += (double)0.4689979444444445367;
-              } else {
-                sum += (double)0.5460650795454544681;
-              }
-            } else {
-              if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)20.58608055114746094) ) ) {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.504411697387695312) ) ) {
-                  if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)3.616540074348449707) ) ) {
-                    sum += (double)0.3897552053571428643;
-                  } else {
-                    sum += (double)0.4588495340909091169;
-                  }
-                } else {
-                  sum += (double)0.3619119814814814595;
-                }
-              } else {
-                sum += (double)0.2684715795454545861;
-              }
-            }
-          } else {
-            sum += (double)0.2080713478260869664;
-          }
-        }
-      } else {
-        if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.052631616592407227) ) ) {
-          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2891269922256469727) ) ) {
-            sum += (double)0.1539684624999999585;
-          } else {
-            sum += (double)0.2736269090909091428;
-          }
-        } else {
-          if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.8622066974639892578) ) ) {
-            sum += (double)0.07089495689655170296;
-          } else {
-            sum += (double)0.01080452941176470762;
-          }
-        }
-      }
-    } else {
-      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1725399941205978394) ) ) {
-        if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.07202149927616119385) ) ) {
-          if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)25.44172954559326172) ) ) {
-            sum += (double)0.04787657500000000454;
-          } else {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.02168099954724311829) ) ) {
-              if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)1314.3897705078125) ) ) {
-                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2734.7891845703125) ) ) {
+      if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.444999992847442627) ) ) {
+        if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.1149999983608722687) ) ) {
+          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.09375200048089027405) ) ) {
+            if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.06499999947845935822) ) ) {
+              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8906499743461608887) ) ) {
+                if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.02499999944120645523) ) ) {
                   sum += (double)0.002500000000000001787;
                 } else {
-                  sum += (double)0.00318383333333333322;
-                }
-              } else {
-                sum += (double)0.008974458333333336021;
-              }
-            } else {
-              if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)156.9863662719726562) ) ) {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-18141.3857421875) ) ) {
-                  sum += (double)0.01980750806451613;
-                } else {
-                  if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)37.20454597473144531) ) ) {
-                    sum += (double)0.01240952499999999938;
+                  if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2941766232252120972) ) ) {
+                    sum += (double)0.004326928571428571846;
                   } else {
-                    if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.3424787521362304688) ) ) {
-                      sum += (double)0.004666312500000000321;
+                    if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4433.33837890625) ) ) {
+                      sum += (double)0.002500000000000000486;
                     } else {
-                      sum += (double)0.002500000000000000052;
+                      sum += (double)0.003084966666666666933;
                     }
                   }
                 }
               } else {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)110.3782501220703125) ) ) {
-                  sum += (double)0.003069138888888889478;
+                sum += (double)0.006513749999999999575;
+              }
+            } else {
+              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)33.76446914672851562) ) ) {
+                sum += (double)0.00894100000000000103;
+              } else {
+                sum += (double)0.003141071428571429267;
+              }
+            }
+          } else {
+            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.3035499900579452515) ) ) {
+              sum += (double)0.03316069642857143174;
+            } else {
+              if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2708461582660675049) ) ) {
+                sum += (double)0.01941996666666666663;
+              } else {
+                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1135159991681575775) ) ) {
+                  sum += (double)0.01102930952380952456;
                 } else {
-                  sum += (double)0.002500000000000000052;
+                  sum += (double)0.003424000000000000394;
                 }
               }
             }
           }
         } else {
-          if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0002999999924213625491) ) ) {
-            sum += (double)0.1595486323529411721;
+          if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)21.81547641754150391) ) ) {
+            sum += (double)0.1181302374999999988;
           } else {
-            if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.4719999879598617554) ) ) {
-              if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1856106668710708618) ) ) {
-                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0344000011682510376) ) ) {
-                  sum += (double)0.1386008333333333398;
-                } else {
-                  if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-13264.98291015625) ) ) {
-                    sum += (double)0.06394511764705881895;
+            if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7507500052452087402) ) ) {
+              if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.914350658655166626) ) ) {
+                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-12556.41748046875) ) ) {
+                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4290000051259994507) ) ) {
+                    sum += (double)0.04331889583333333599;
                   } else {
-                    sum += (double)0.03589641666666666675;
+                    if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-25112.6376953125) ) ) {
+                      sum += (double)0.01862651315789473627;
+                    } else {
+                      sum += (double)0.008190029411764707112;
+                    }
+                  }
+                } else {
+                  if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)45.47155189514160156) ) ) {
+                    if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)27.51648330688476562) ) ) {
+                      sum += (double)0.05429835714285712739;
+                    } else {
+                      sum += (double)0.01287795833333333501;
+                    }
+                  } else {
+                    sum += (double)0.08488413749999998426;
                   }
                 }
               } else {
-                if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.150150001049041748) ) ) {
-                  if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-23916.427734375) ) ) {
-                    sum += (double)0.03297749999999998599;
-                  } else {
-                    if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)29.41929817199707031) ) ) {
-                      sum += (double)0.03360390000000000599;
-                    } else {
-                      sum += (double)0.007999341772151894597;
-                    }
-                  }
+                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-12785.7978515625) ) ) {
+                  sum += (double)0.01161500000000000032;
                 } else {
-                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2918500006198883057) ) ) {
-                    if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-19118.681640625) ) ) {
-                      sum += (double)0.09009437962962962843;
-                    } else {
-                      sum += (double)0.0344864600000000035;
-                    }
-                  } else {
-                    if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)71.8111419677734375) ) ) {
-                      sum += (double)0.03135683870967741205;
-                    } else {
-                      sum += (double)0.01088090476190476524;
-                    }
-                  }
+                  sum += (double)0.003019416666666666343;
                 }
               }
             } else {
-              sum += (double)0.1298963333333333359;
+              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)76.263885498046875) ) ) {
+                sum += (double)0.03750695833333333312;
+              } else {
+                sum += (double)0.10615458333333333;
+              }
             }
           }
         }
       } else {
-        if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4061000049114227295) ) ) {
-          if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4872388243675231934) ) ) {
-            sum += (double)0.1633700735294117412;
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4184524863958358765) ) ) {
+          if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.009349999949336051941) ) ) {
+            sum += (double)0.2388957758620690042;
           } else {
-            if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.14357227087020874) ) ) {
-              if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.2074499949812889099) ) ) {
-                sum += (double)0.1015236000000000055;
-              } else {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)21.17581748962402344) ) ) {
-                  sum += (double)0.06767508999999999331;
-                } else {
-                  if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)67.80555343627929688) ) ) {
-                    sum += (double)0.006270088235294117573;
+            if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.6086320579051971436) ) ) {
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2200369983911514282) ) ) {
+                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)13.5423741340637207) ) ) {
+                  if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.15731000155210495) ) ) {
+                    sum += (double)0.05075061250000000024;
                   } else {
-                    sum += (double)0.02242423148148147902;
+                    sum += (double)0.1376539907407407504;
+                  }
+                } else {
+                  if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4826708436012268066) ) ) {
+                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1883779987692832947) ) ) {
+                      sum += (double)0.02743877232142857142;
+                    } else {
+                      sum += (double)0.0471321029411764722;
+                    }
+                  } else {
+                    sum += (double)0.07549249999999997629;
+                  }
+                }
+              } else {
+                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-9298.3466796875) ) ) {
+                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-13848.81103515625) ) ) {
+                    sum += (double)0.1132830340909090905;
+                  } else {
+                    sum += (double)0.04427855000000000679;
+                  }
+                } else {
+                  if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)14.4426722526550293) ) ) {
+                    if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)42.96306800842285156) ) ) {
+                      sum += (double)0.109295442708333343;
+                    } else {
+                      sum += (double)0.1947533214285714631;
+                    }
+                  } else {
+                    sum += (double)0.2858828269230769825;
                   }
                 }
               }
             } else {
-              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3947.4403076171875) ) ) {
-                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1278499998152256012) ) ) {
-                  sum += (double)0.04739164583333332903;
+              if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.685000002384185791) ) ) {
+                if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.5349999964237213135) ) ) {
+                  sum += (double)0.01907855555555555693;
                 } else {
-                  if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)36.57894706726074219) ) ) {
-                    sum += (double)0.02022161363636363479;
-                  } else {
-                    sum += (double)0.003847309523809524113;
-                  }
+                  sum += (double)0.1252165555555555532;
                 }
               } else {
-                sum += (double)0.005368656250000001032;
+                if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.9650000035762786865) ) ) {
+                  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2762285023927688599) ) ) {
+                    sum += (double)0.009688281250000001579;
+                  } else {
+                    sum += (double)0.03317190476190476356;
+                  }
+                } else {
+                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.228400006890296936) ) ) {
+                    sum += (double)0.02207151562499999956;
+                  } else {
+                    sum += (double)0.06279594318181817847;
+                  }
+                }
               }
             }
           }
         } else {
-          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)13.47499990463256836) ) ) {
-            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-7729.809326171875) ) ) {
-              if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6004000008106231689) ) ) {
-                sum += (double)0.4170413152173912952;
-              } else {
-                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2921674996614456177) ) ) {
-                  sum += (double)0.2204584999999999739;
-                } else {
-                  sum += (double)0.3126573874999999947;
-                }
-              }
-            } else {
-              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4357.235107421875) ) ) {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-5528.4384765625) ) ) {
-                  sum += (double)0.1018606346153846237;
-                } else {
-                  sum += (double)0.2028236710526315767;
-                }
-              } else {
-                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2269189655780792236) ) ) {
-                  sum += (double)0.0462270999999999932;
-                } else {
-                  sum += (double)0.1349181607142856953;
-                }
-              }
-            }
+          if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)42.22500038146972656) ) ) {
+            sum += (double)0.1373766904761904717;
           } else {
-            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.09700000286102294922) ) ) {
-              if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)97.29999923706054688) ) ) {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)17.71372509002685547) ) ) {
-                  sum += (double)0.04594754166666666778;
-                } else {
-                  sum += (double)0.02317466666666667327;
-                }
-              } else {
-                sum += (double)0.09012435416666664256;
-              }
-            } else {
-              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)20.87923717498779297) ) ) {
-                if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7089000046253204346) ) ) {
-                  sum += (double)0.2637286022727272639;
-                } else {
-                  sum += (double)0.140570324999999996;
-                }
-              } else {
-                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-22102.33203125) ) ) {
-                  if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)99.13927078247070312) ) ) {
-                    if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.4855499863624572754) ) ) {
-                      sum += (double)0.2144091250000000337;
-                    } else {
-                      sum += (double)0.1500002500000000016;
-                    }
-                  } else {
-                    sum += (double)0.0558353333333333271;
-                  }
-                } else {
-                  if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)91.50487136840820312) ) ) {
-                    sum += (double)0.03283080681818181107;
-                  } else {
-                    sum += (double)0.1181155833333333294;
-                  }
-                }
-              }
-            }
+            sum += (double)0.3585439722222222847;
           }
         }
       }
     }
   } else {
-    if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5112900435924530029) ) ) {
-      if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.539371490478515625) ) ) {
-        if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)103.2056846618652344) ) ) {
-          if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)4.999999873689375818e-05) ) ) {
-            sum += (double)0.375634156249999962;
-          } else {
-            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.06940000131726264954) ) ) {
-              if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)22.54248332977294922) ) ) {
-                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2440002039074897766) ) ) {
-                  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4542175084352493286) ) ) {
-                    sum += (double)0.4828068088235294431;
-                  } else {
-                    sum += (double)0.5630611730769230494;
-                  }
-                } else {
-                  sum += (double)0.4127121874999999385;
-                }
+    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4572215080261230469) ) ) {
+      if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.100659728050231934) ) ) {
+        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)11.72046709060668945) ) ) {
+          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3596890121698379517) ) ) {
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.007699999958276748657) ) ) {
+              if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0004999999910069163889) ) ) {
+                sum += (double)0.5204024910714285523;
               } else {
-                sum += (double)0.5869506590909090438;
+                sum += (double)0.4217368676470588662;
               }
             } else {
-              if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)34.8166656494140625) ) ) {
-                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1278000026941299438) ) ) {
-                  sum += (double)0.4348692870370370334;
+              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2441440001130104065) ) ) {
+                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-13481.8076171875) ) ) {
+                  sum += (double)0.3515327142857143095;
                 } else {
-                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4351.010986328125) ) ) {
-                    if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4745550006628036499) ) ) {
-                      sum += (double)0.457926557692307723;
+                  if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4846876710653305054) ) ) {
+                    if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-7508.677001953125) ) ) {
+                      sum += (double)0.2128145476190475838;
                     } else {
-                      sum += (double)0.489176269230769345;
+                      sum += (double)0.3446106176470588034;
                     }
                   } else {
-                    sum += (double)0.550661781249999871;
+                    sum += (double)0.1551797500000000052;
                   }
                 }
               } else {
-                sum += (double)0.3369449782608695543;
+                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)29.17366981506347656) ) ) {
+                  if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.716250002384185791) ) ) {
+                    if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2302553355693817139) ) ) {
+                      sum += (double)0.4120285785714285498;
+                    } else {
+                      sum += (double)0.3612688958333334366;
+                    }
+                  } else {
+                    sum += (double)0.2412796022727272671;
+                  }
+                } else {
+                  sum += (double)0.4678821617647058728;
+                }
+              }
+            }
+          } else {
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01735000032931566238) ) ) {
+              sum += (double)0.5757502767857142212;
+            } else {
+              if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5354283750057220459) ) ) {
+                if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1734500005841255188) ) ) {
+                  if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.822543859481811523) ) ) {
+                    sum += (double)0.4545894404761904872;
+                  } else {
+                    if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1914241760969161987) ) ) {
+                      sum += (double)0.4613935952380953109;
+                    } else {
+                      sum += (double)0.5487930799999999332;
+                    }
+                  }
+                } else {
+                  sum += (double)0.4235304791666665847;
+                }
+              } else {
+                sum += (double)0.3986679545454545615;
               }
             }
           }
         } else {
-          sum += (double)0.3089225178571428643;
+          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)25.34866619110107422) ) ) {
+            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2084544971585273743) ) ) {
+              if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2304032072424888611) ) ) {
+                sum += (double)0.2355436029411764609;
+              } else {
+                sum += (double)0.1075324625000000089;
+              }
+            } else {
+              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.722050011157989502) ) ) {
+                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1807000041007995605) ) ) {
+                  sum += (double)0.3792880795454545151;
+                } else {
+                  if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.3682000041007995605) ) ) {
+                    sum += (double)0.2486309833333333608;
+                  } else {
+                    sum += (double)0.357495890624999979;
+                  }
+                }
+              } else {
+                sum += (double)0.2496168064516129381;
+              }
+            }
+          } else {
+            if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.3525566458702087402) ) ) {
+              sum += (double)0.2492043593749999897;
+            } else {
+              if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1952999979257583618) ) ) {
+                sum += (double)0.07659104761904764191;
+              } else {
+                sum += (double)0.1826017187500000027;
+              }
+            }
+          }
         }
       } else {
-        if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6581094861030578613) ) ) {
-          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.367253541946411133) ) ) {
-            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.5396499931812286377) ) ) {
-              sum += (double)0.5709835555555556885;
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.378157496452331543) ) ) {
+          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.373043537139892578) ) ) {
+            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3787.3985595703125) ) ) {
+              sum += (double)0.1166032343749999894;
             } else {
-              if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.02900000009685754776) ) ) {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.644927501678466797) ) ) {
-                  sum += (double)0.7074217159090910867;
-                } else {
-                  sum += (double)0.6635985166666666935;
-                }
-              } else {
-                if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)9.982558250427246094) ) ) {
-                  sum += (double)0.603945500000000024;
-                } else {
-                  sum += (double)0.6636772604166666367;
-                }
-              }
+              sum += (double)0.02376675000000000315;
             }
           } else {
-            sum += (double)0.479751659090909166;
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.3403999954462051392) ) ) {
+              sum += (double)0.04653210937499999839;
+            } else {
+              sum += (double)0.01737041666666666595;
+            }
           }
         } else {
-          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.695976495742797852) ) ) {
-            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6645500063896179199) ) ) {
-              sum += (double)0.709481136363636411;
-            } else {
-              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.9553999900817871094) ) ) {
-                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7397920191287994385) ) ) {
-                  sum += (double)0.7575765156249999466;
-                } else {
-                  if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)0.8970215022563934326) ) ) {
-                    sum += (double)0.8351470921052632779;
-                  } else {
-                    sum += (double)0.7948905357142855843;
-                  }
-                }
-              } else {
-                sum += (double)0.8604638269230769909;
-              }
-            }
+          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.1109500005841255188) ) ) {
+            sum += (double)0.2043191388888888904;
           } else {
-            sum += (double)0.66696346093750003;
+            sum += (double)0.0884313624999999992;
           }
         }
       }
     } else {
-      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5304344892501831055) ) ) {
-        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)11.46750688552856445) ) ) {
-          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2825.5277099609375) ) ) {
-            if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.4357000142335891724) ) ) {
-              sum += (double)0.4436570808823528944;
-            } else {
-              sum += (double)0.344313823529411811;
-            }
-          } else {
-            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)6.023707866668701172) ) ) {
-              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.1217999979853630066) ) ) {
-                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4531719982624053955) ) ) {
-                  sum += (double)0.1020723281250000003;
+      if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.031677126884460449) ) ) {
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6581094861030578613) ) ) {
+          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)15.00396823883056641) ) ) {
+            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.508300483226776123) ) ) {
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.485868990421295166) ) ) {
+                if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)11.02027034759521484) ) ) {
+                  sum += (double)0.496511607142857192;
                 } else {
-                  sum += (double)0.2672072500000000628;
+                  sum += (double)0.600306928571428644;
                 }
               } else {
-                sum += (double)0.3255647999999999875;
+                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3782.74609375) ) ) {
+                  sum += (double)0.5281457142857143294;
+                } else {
+                  sum += (double)0.4296200312499999785;
+                }
               }
             } else {
-              sum += (double)0.08594388636363635425;
-            }
-          }
-        } else {
-          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.2573500126600265503) ) ) {
-            if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.192499995231628418) ) ) {
-              sum += (double)0.09769215217391302719;
-            } else {
-              sum += (double)0.0201702083333333386;
+              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)5.56214594841003418) ) ) {
+                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5742489993572235107) ) ) {
+                  sum += (double)0.5246028281249999203;
+                } else {
+                  sum += (double)0.5702365624999998772;
+                }
+              } else {
+                if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.818649977445602417) ) ) {
+                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.04144999943673610687) ) ) {
+                    sum += (double)0.6909698484848485478;
+                  } else {
+                    sum += (double)0.63513561904761906;
+                  }
+                } else {
+                  if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.007949999766424298286) ) ) {
+                    sum += (double)0.6629016911764705755;
+                  } else {
+                    sum += (double)0.5657468299999998118;
+                  }
+                }
+              }
             }
           } else {
-            sum += (double)0.1658260681818181925;
+            sum += (double)0.3311827500000000257;
+          }
+        } else {
+          if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5474960207939147949) ) ) {
+            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.741619497537612915) ) ) {
+              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6889590024948120117) ) ) {
+                sum += (double)0.7579987750000000135;
+              } else {
+                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7125905156135559082) ) ) {
+                  sum += (double)0.6562765192307692397;
+                } else {
+                  sum += (double)0.7100625535714285563;
+                }
+              }
+            } else {
+              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1620.94403076171875) ) ) {
+                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.07485000044107437134) ) ) {
+                  sum += (double)0.8135297894736842617;
+                } else {
+                  sum += (double)0.7519565294117648291;
+                }
+              } else {
+                sum += (double)0.8688640789473683901;
+              }
+            }
+          } else {
+            sum += (double)0.6094037794117648232;
           }
         }
       } else {
-        if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3206.296630859375) ) ) {
-          if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.062593340873718262) ) ) {
-            sum += (double)0.5705309374999999461;
+        if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)1.98280489444732666) ) ) {
+          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6068294942378997803) ) ) {
+            sum += (double)0.3952138382352941015;
           } else {
-            sum += (double)0.4047763181818181955;
+            sum += (double)0.4685154285714285827;
           }
         } else {
-          if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)3.731029748916625977) ) ) {
-            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)1.881829261779785156) ) ) {
-              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)0.9427835941314697266) ) ) {
-                sum += (double)0.4781068035714285958;
-              } else {
-                sum += (double)0.4288693624999999621;
-              }
-            } else {
-              sum += (double)0.3638579166666667253;
-            }
+          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3658.5477294921875) ) ) {
+            sum += (double)0.4027327884615384823;
           } else {
-            sum += (double)0.1714866500000000182;
+            sum += (double)0.1828825104166666715;
           }
         }
       }
     }
   }
-  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3839095085859298706) ) ) {
-    if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)8.662373542785644531) ) ) {
-      if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.969126582145690918) ) ) {
-        if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2278250008821487427) ) ) {
-          if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2343.62744140625) ) ) {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1492550000548362732) ) ) {
-              sum += (double)0.1497637884615384551;
-            } else {
-              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.06590000167489051819) ) ) {
-                sum += (double)0.3909235156249999954;
-              } else {
-                sum += (double)0.2551972343750000261;
-              }
-            }
-          } else {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.625) ) ) {
-              sum += (double)0.1625084558823528813;
-            } else {
-              sum += (double)0.02552710526315789957;
-            }
-          }
+  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.995000004768371582) ) ) {
+    if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)7.084967374801635742) ) ) {
+      if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2601370066404342651) ) ) {
+        if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1746900007128715515) ) ) {
+          sum += (double)0.0652042142857142959;
         } else {
-          if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2078.4638671875) ) ) {
-            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.005050000036135315895) ) ) {
-              sum += (double)0.5466170000000000195;
-            } else {
-              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2947520017623901367) ) ) {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4599.54443359375) ) ) {
-                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-7950.183837890625) ) ) {
-                    sum += (double)0.3599225526315789625;
-                  } else {
-                    sum += (double)0.4317830624999999811;
-                  }
-                } else {
-                  if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3064.7276611328125) ) ) {
-                    sum += (double)0.2587757500000000266;
-                  } else {
-                    sum += (double)0.3699116527777777663;
-                  }
-                }
-              } else {
-                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)19.51201343536376953) ) ) {
-                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3312.6978759765625) ) ) {
-                    if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)11.09652614593505859) ) ) {
-                      sum += (double)0.3938231442307691954;
-                    } else {
-                      sum += (double)0.4438787307692307338;
-                    }
-                  } else {
-                    sum += (double)0.4664092258064516106;
-                  }
-                } else {
-                  sum += (double)0.3263683000000000001;
-                }
-              }
-            }
-          } else {
-            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3255925029516220093) ) ) {
-              sum += (double)0.2278440760869565318;
-            } else {
-              sum += (double)0.4149816052631579155;
-            }
-          }
+          sum += (double)0.1529337499999999517;
         }
       } else {
-        if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)4.293749809265136719) ) ) {
-          sum += (double)0.2468928392857142884;
-        } else {
-          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4313.30517578125) ) ) {
-            sum += (double)0.1377087750000000055;
+        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5296977460384368896) ) ) {
+          if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.935000002384185791) ) ) {
+            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3595435023307800293) ) ) {
+              sum += (double)0.3780609230769229612;
+            } else {
+              sum += (double)0.2148026458333333333;
+            }
           } else {
-            sum += (double)0.02087468000000000309;
+            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5083524882793426514) ) ) {
+              sum += (double)0.4116858421052631556;
+            } else {
+              sum += (double)0.6015479230769231744;
+            }
+          }
+        } else {
+          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.951639533042907715) ) ) {
+            sum += (double)0.2857179375000000188;
+          } else {
+            sum += (double)0.1101253421052631465;
           }
         }
       }
     } else {
-      if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.13558950275182724) ) ) {
-        if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)24.26955699920654297) ) ) {
-          if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0001999999949475750327) ) ) {
-            sum += (double)0.2690763666666666776;
-          } else {
-            sum += (double)0.04418240624999999339;
-          }
-        } else {
-          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.07202149927616119385) ) ) {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)13.66541337966918945) ) ) {
-              sum += (double)0.02298936249999999903;
+      if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.4149999916553497314) ) ) {
+        if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.1149999983608722687) ) ) {
+          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.09086100012063980103) ) ) {
+            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.17395000159740448) ) ) {
+              sum += (double)0.01556796428571428741;
             } else {
-              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)50.51062774658203125) ) ) {
-                sum += (double)0.01030508333333333276;
+              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)13.22916650772094727) ) ) {
+                sum += (double)0.008004428571428573794;
               } else {
-                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.04316999949514865875) ) ) {
-                  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.0218420000746846199) ) ) {
-                    sum += (double)0.002500000000000001353;
-                  } else {
-                    if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.09840000048279762268) ) ) {
-                      sum += (double)0.002500000000000000052;
+                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.05701099894940853119) ) ) {
+                  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.03499999921768903732) ) ) {
+                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.037707500159740448) ) ) {
+                      sum += (double)0.002500000000000001787;
                     } else {
-                      sum += (double)0.004996500000000000941;
+                      sum += (double)0.002940961538461538127;
                     }
+                  } else {
+                    sum += (double)0.003843823529411764545;
                   }
                 } else {
-                  if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)97.68828582763671875) ) ) {
-                    sum += (double)0.01194796428571428745;
+                  if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.06579599902033805847) ) ) {
+                    sum += (double)0.00820344117647058696;
                   } else {
-                    if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.5811499953269958496) ) ) {
-                      sum += (double)0.002500000000000000052;
-                    } else {
-                      sum += (double)0.004667552631578948154;
-                    }
+                    sum += (double)0.002889984375000000192;
                   }
                 }
               }
             }
           } else {
-            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-21659.8779296875) ) ) {
-              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)33.10022926330566406) ) ) {
-                sum += (double)0.1366999210526315678;
+            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)14.77100849151611328) ) ) {
+              sum += (double)0.04173155357142856181;
+            } else {
+              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.03070000000298023224) ) ) {
+                sum += (double)0.02548819230769230545;
               } else {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)378.0294189453125) ) ) {
-                  sum += (double)0.02337787068965516829;
+                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2672.490234375) ) ) {
+                  sum += (double)0.009675230769230769301;
                 } else {
                   sum += (double)0.002500000000000000486;
                 }
               }
+            }
+          }
+        } else {
+          if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1250540986657142639) ) ) {
+            sum += (double)0.1162279861111111257;
+          } else {
+            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)21.73214340209960938) ) ) {
+              sum += (double)0.09319714772727273611;
             } else {
-              if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)75.91249847412109375) ) ) {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)25.90555572509765625) ) ) {
-                  if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.04165000095963478088) ) ) {
-                    sum += (double)0.00907317592592592724;
-                  } else {
-                    if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.08719999715685844421) ) ) {
-                      sum += (double)0.02802311666666666701;
+              if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.1249999962747097015) ) ) {
+                sum += (double)0.07042643333333332978;
+              } else {
+                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2130.19915771484375) ) ) {
+                  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.3250000029802322388) ) ) {
+                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.242375500500202179) ) ) {
+                      sum += (double)0.008957443037974677919;
                     } else {
-                      sum += (double)0.01549548000000000071;
+                      sum += (double)0.02015337500000000115;
+                    }
+                  } else {
+                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1736664995551109314) ) ) {
+                      sum += (double)0.01850256034482758438;
+                    } else {
+                      sum += (double)0.05092048214285712499;
                     }
                   }
                 } else {
-                  sum += (double)0.03570088235294117257;
-                }
-              } else {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-9231.883056640625) ) ) {
-                  sum += (double)0.006225382352941176076;
-                } else {
-                  sum += (double)0.002500000000000000052;
+                  sum += (double)0.06131573333333332348;
                 }
               }
             }
           }
         }
       } else {
-        if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)16.78939533233642578) ) ) {
-          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-7760.676513671875) ) ) {
-            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)11.24843740463256836) ) ) {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3281764984130859375) ) ) {
-                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-13660.58154296875) ) ) {
-                  sum += (double)0.333132218750000042;
-                } else {
-                  sum += (double)0.1881640769230769061;
-                }
-              } else {
-                sum += (double)0.5023380576923077712;
-              }
-            } else {
-              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-19397.1982421875) ) ) {
-                sum += (double)0.3009469500000000464;
-              } else {
-                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)29.57570838928222656) ) ) {
-                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-10342.49951171875) ) ) {
-                    sum += (double)0.1673264605263158067;
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5698890089988708496) ) ) {
+          if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.7399341762065887451) ) ) {
+            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-9288.591796875) ) ) {
+              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6981000006198883057) ) ) {
+                if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.4694499969482421875) ) ) {
+                  if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.04154999926686286926) ) ) {
+                    sum += (double)0.09129577777777778125;
                   } else {
-                    sum += (double)0.04799584615384615977;
-                  }
-                } else {
-                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7326999902725219727) ) ) {
-                    sum += (double)0.2705399499999999735;
-                  } else {
-                    sum += (double)0.1483578552631578673;
-                  }
-                }
-              }
-            }
-          } else {
-            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)16.46666622161865234) ) ) {
-              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.09824999794363975525) ) ) {
-                sum += (double)0.01341902777777777798;
-              } else {
-                sum += (double)0.04394519444444443257;
-              }
-            } else {
-              if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.07919999957084655762) ) ) {
-                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1797269880771636963) ) ) {
-                  sum += (double)0.1815816785714285397;
-                } else {
-                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4652500003576278687) ) ) {
-                    sum += (double)0.1134928500000000062;
-                  } else {
-                    if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2915692329406738281) ) ) {
-                      sum += (double)0.06869960999999998041;
+                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1734215021133422852) ) ) {
+                      sum += (double)0.01929257327586206966;
                     } else {
-                      sum += (double)0.01867638095238095125;
+                      sum += (double)0.05587414903846152359;
+                    }
+                  }
+                } else {
+                  sum += (double)0.100549133333333332;
+                }
+              } else {
+                if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.879999995231628418) ) ) {
+                  sum += (double)0.08446622826086955249;
+                } else {
+                  sum += (double)0.1764384499999999689;
+                }
+              }
+            } else {
+              if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)43.91666793823242188) ) ) {
+                if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.9150000214576721191) ) ) {
+                  if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)32.09094715118408203) ) ) {
+                    if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.04769999906420707703) ) ) {
+                      sum += (double)0.03055131818181818643;
+                    } else {
+                      sum += (double)0.0693702799999999925;
+                    }
+                  } else {
+                    sum += (double)0.1333941309523809793;
+                  }
+                } else {
+                  if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2821574658155441284) ) ) {
+                    sum += (double)0.09955773076923073173;
+                  } else {
+                    if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.9750000238418579102) ) ) {
+                      sum += (double)0.216011859374999976;
+                    } else {
+                      sum += (double)0.2847596000000000571;
                     }
                   }
                 }
               } else {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)12.20526313781738281) ) ) {
-                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.65209999680519104) ) ) {
-                    sum += (double)0.1895901176470588256;
+                if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.7950000166893005371) ) ) {
+                  sum += (double)0.1937852222222222476;
+                } else {
+                  sum += (double)0.3370242794117647711;
+                }
+              }
+            }
+          } else {
+            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3908079862594604492) ) ) {
+              if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.5949999988079071045) ) ) {
+                sum += (double)0.05013956730769229819;
+              } else {
+                if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.033021330833435059) ) ) {
+                  sum += (double)0.02876504347826087243;
+                } else {
+                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3199.353515625) ) ) {
+                    if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2459665015339851379) ) ) {
+                      sum += (double)0.009650346153846155184;
+                    } else {
+                      sum += (double)0.01949184210526316158;
+                    }
                   } else {
-                    sum += (double)0.09847857500000001263;
+                    sum += (double)0.004187695652173913791;
+                  }
+                }
+              }
+            } else {
+              sum += (double)0.09841565624999999706;
+            }
+          }
+        } else {
+          sum += (double)0.3205112222222222251;
+        }
+      }
+    }
+  } else {
+    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4615415036678314209) ) ) {
+      if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.9545539617538452148) ) ) {
+        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)10.24973917007446289) ) ) {
+          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3595600128173828125) ) ) {
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0113499998115003109) ) ) {
+              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0004499999922700226307) ) ) {
+                sum += (double)0.5177230263157894807;
+              } else {
+                sum += (double)0.4287905760869564764;
+              }
+            } else {
+              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2338944971561431885) ) ) {
+                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)6.401972293853759766) ) ) {
+                  sum += (double)0.2903940652173913062;
+                } else {
+                  if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2056175023317337036) ) ) {
+                    sum += (double)0.2058424285714285928;
+                  } else {
+                    sum += (double)0.1446660500000000182;
+                  }
+                }
+              } else {
+                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)28.58190441131591797) ) ) {
+                  if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7280000150203704834) ) ) {
+                    if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2296859323978424072) ) ) {
+                      sum += (double)0.4073571363636362963;
+                    } else {
+                      sum += (double)0.3408895764705882625;
+                    }
+                  } else {
+                    sum += (double)0.2480905535714285626;
                   }
                 } else {
-                  sum += (double)0.2808900326086956611;
+                  sum += (double)0.4772673194444444489;
+                }
+              }
+            }
+          } else {
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.003649999969638884068) ) ) {
+              sum += (double)0.5852508977272726787;
+            } else {
+              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2549.707275390625) ) ) {
+                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3221.32568359375) ) ) {
+                  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4260305017232894897) ) ) {
+                    if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)7.483098506927490234) ) ) {
+                      sum += (double)0.466982543478260903;
+                    } else {
+                      sum += (double)0.5320501250000000404;
+                    }
+                  } else {
+                    sum += (double)0.4245434868421052443;
+                  }
+                } else {
+                  sum += (double)0.3672409999999999841;
+                }
+              } else {
+                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.07084999978542327881) ) ) {
+                  sum += (double)0.4983964264705883496;
+                } else {
+                  sum += (double)0.5420605648148147937;
                 }
               }
             }
           }
         } else {
-          if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4948.07861328125) ) ) {
-            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)35.0332794189453125) ) ) {
-              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-43883.498046875) ) ) {
-                sum += (double)0.2640822272727272324;
-              } else {
-                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2507845014333724976) ) ) {
-                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-10292.85986328125) ) ) {
-                    if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1907999962568283081) ) ) {
-                      sum += (double)0.04819941176470586564;
-                    } else {
-                      sum += (double)0.110051514705882314;
-                    }
+          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)23.65734291076660156) ) ) {
+            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-8092.22021484375) ) ) {
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2674500048160552979) ) ) {
+                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-12223.82666015625) ) ) {
+                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.5823000073432922363) ) ) {
+                    sum += (double)0.2229953999999999548;
                   } else {
-                    sum += (double)0.01246954761904761969;
+                    sum += (double)0.1449225833333332991;
                   }
                 } else {
-                  if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4304306358098983765) ) ) {
-                    sum += (double)0.1823255833333333464;
-                  } else {
-                    if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2941924929618835449) ) ) {
-                      sum += (double)0.1120277500000000093;
-                    } else {
-                      sum += (double)0.06430621250000000122;
-                    }
-                  }
+                  sum += (double)0.3344729342105262626;
+                }
+              } else {
+                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2865590751171112061) ) ) {
+                  sum += (double)0.3252882692307691448;
+                } else {
+                  sum += (double)0.4266893690476190604;
                 }
               }
             } else {
-              if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.08580000326037406921) ) ) {
-                sum += (double)0.1107228611111110983;
+              sum += (double)0.1386498020833333011;
+            }
+          } else {
+            if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.3565506190061569214) ) ) {
+              sum += (double)0.2181050833333333105;
+            } else {
+              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3227570056915283203) ) ) {
+                sum += (double)0.06596110294117646378;
               } else {
-                if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)111.9640769958496094) ) ) {
-                  if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-32129.02734375) ) ) {
-                    sum += (double)0.08087674999999999725;
+                sum += (double)0.1469117000000000062;
+              }
+            }
+          }
+        }
+      } else {
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3836105018854141235) ) ) {
+          if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.05865000002086162567) ) ) {
+            sum += (double)0.1259200625000000129;
+          } else {
+            if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.1706000044941902161) ) ) {
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2988149970769882202) ) ) {
+                sum += (double)0.01933562500000000559;
+              } else {
+                sum += (double)0.06928165277777778575;
+              }
+            } else {
+              sum += (double)0.07914056249999999737;
+            }
+          }
+        } else {
+          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)7.149871826171875) ) ) {
+            sum += (double)0.2209562583333332941;
+          } else {
+            sum += (double)0.09295363749999999148;
+          }
+        }
+      }
+    } else {
+      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7020279765129089355) ) ) {
+        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.7429124116897583008) ) ) {
+          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5441325008869171143) ) ) {
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.03080000076442956924) ) ) {
+              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4811249971389770508) ) ) {
+                sum += (double)0.5221760156250000451;
+              } else {
+                sum += (double)0.6349835999999999814;
+              }
+            } else {
+              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7854500114917755127) ) ) {
+                if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6297500133514404297) ) ) {
+                  sum += (double)0.5698617894736842659;
+                } else {
+                  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4972509890794754028) ) ) {
+                    sum += (double)0.5368942314814814099;
                   } else {
-                    if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.8781290352344512939) ) ) {
-                      sum += (double)0.0251857567567567546;
+                    sum += (double)0.4636146093749999864;
+                  }
+                }
+              } else {
+                sum += (double)0.436840166666666585;
+              }
+            }
+          } else {
+            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1508.35369873046875) ) ) {
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6402489840984344482) ) ) {
+                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-6890.1181640625) ) ) {
+                  sum += (double)0.5166505694444443186;
+                } else {
+                  if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)7.617925882339477539) ) ) {
+                    sum += (double)0.5566808809523807744;
+                  } else {
+                    if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)15.03195524215698242) ) ) {
+                      sum += (double)0.6491810000000001191;
                     } else {
-                      sum += (double)0.003838400000000000058;
+                      sum += (double)0.5711876590909091833;
+                    }
+                  }
+                }
+              } else {
+                sum += (double)0.683264611111111142;
+              }
+            } else {
+              sum += (double)0.7109656899999999835;
+            }
+          }
+        } else {
+          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6088369786739349365) ) ) {
+            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)2.206399202346801758) ) ) {
+              sum += (double)0.3938164264705882323;
+            } else {
+              sum += (double)0.279233445652173895;
+            }
+          } else {
+            sum += (double)0.4373567142857141543;
+          }
+        }
+      } else {
+        if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)2.725079536437988281) ) ) {
+          sum += (double)0.6523902343750000998;
+        } else {
+          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7399425208568572998) ) ) {
+            sum += (double)0.6944961184210526328;
+          } else {
+            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3625.1453857421875) ) ) {
+              sum += (double)0.7765494124999998693;
+            } else {
+              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8970000147819519043) ) ) {
+                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.07954045012593269348) ) ) {
+                  sum += (double)0.7890757647058822544;
+                } else {
+                  sum += (double)0.8566084285714284929;
+                }
+              } else {
+                sum += (double)0.8728537187499999517;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.995000004768371582) ) ) {
+    if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)6.580495357513427734) ) ) {
+      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4811269938945770264) ) ) {
+        if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.2199999988079071045) ) ) {
+          sum += (double)0.07788751190476188302;
+        } else {
+          if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)11.49186086654663086) ) ) {
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.06745000183582305908) ) ) {
+              sum += (double)0.05495744117647058391;
+            } else {
+              sum += (double)0.2729511666666666891;
+            }
+          } else {
+            if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.8650000095367431641) ) ) {
+              sum += (double)0.2343946964285713863;
+            } else {
+              sum += (double)0.3827920714285714121;
+            }
+          }
+        }
+      } else {
+        if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5125246047973632812) ) ) {
+          sum += (double)0.5562709886363635947;
+        } else {
+          sum += (double)0.312889971153846147;
+        }
+      }
+    } else {
+      if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.8349999785423278809) ) ) {
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5151855051517486572) ) ) {
+          if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.2149999961256980896) ) ) {
+            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.947222232818603516) ) ) {
+              sum += (double)0.04752391666666665876;
+            } else {
+              if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.1149999983608722687) ) ) {
+                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1425554975867271423) ) ) {
+                  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.05499999970197677612) ) ) {
+                    if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)1488.8948974609375) ) ) {
+                      sum += (double)0.002945283582089551402;
+                    } else {
+                      sum += (double)0.01000631250000000132;
+                    }
+                  } else {
+                    if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)51.47115325927734375) ) ) {
+                      sum += (double)0.01973213888888889281;
+                    } else {
+                      sum += (double)0.004778655555555556995;
                     }
                   }
                 } else {
-                  sum += (double)0.0117716060606060588;
+                  if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.02745000086724758148) ) ) {
+                    sum += (double)0.0364041428571428502;
+                  } else {
+                    sum += (double)0.004835543478260870449;
+                  }
+                }
+              } else {
+                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)121.364288330078125) ) ) {
+                  if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.158449999988079071) ) ) {
+                    if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5590803921222686768) ) ) {
+                      sum += (double)0.01535500000000000059;
+                    } else {
+                      sum += (double)0.002499999999999999618;
+                    }
+                  } else {
+                    sum += (double)0.02703136842105262685;
+                  }
+                } else {
+                  sum += (double)0.03736813541666666322;
                 }
               }
             }
           } else {
-            if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2666459977626800537) ) ) {
-              if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)46.20714378356933594) ) ) {
-                sum += (double)0.002500000000000000486;
+            if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1339722797274589539) ) ) {
+              sum += (double)0.119796406250000001;
+            } else {
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1942159980535507202) ) ) {
+                if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.3942999988794326782) ) ) {
+                  if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)14.94373846054077148) ) ) {
+                    if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)11.14531850814819336) ) ) {
+                      sum += (double)0.01494025000000000214;
+                    } else {
+                      sum += (double)0.04818446951219511332;
+                    }
+                  } else {
+                    if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.3291500061750411987) ) ) {
+                      sum += (double)0.005721600000000000297;
+                    } else {
+                      sum += (double)0.01549320294117646421;
+                    }
+                  }
+                } else {
+                  sum += (double)0.0811321093749999972;
+                }
               } else {
-                sum += (double)0.005918233333333333332;
+                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3274.693359375) ) ) {
+                  if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1721000000834465027) ) ) {
+                    sum += (double)0.1291132596153846124;
+                  } else {
+                    if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)39) ) ) {
+                      sum += (double)0.09408939285714283673;
+                    } else {
+                      sum += (double)0.02841136666666667018;
+                    }
+                  }
+                } else {
+                  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.6650000214576721191) ) ) {
+                    sum += (double)0.06126583333333332493;
+                  } else {
+                    sum += (double)0.006121631578947368119;
+                  }
+                }
+              }
+            }
+          }
+        } else {
+          sum += (double)0.2026146875000000014;
+        }
+      } else {
+        if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0001500000071246176958) ) ) {
+          sum += (double)0.3376989285714286915;
+        } else {
+          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6792999804019927979) ) ) {
+            if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5198086798191070557) ) ) {
+              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-5051.124267578125) ) ) {
+                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.359081655740737915) ) ) {
+                  if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.9250000119209289551) ) ) {
+                    sum += (double)0.08491715384615385054;
+                  } else {
+                    sum += (double)0.03980660714285715746;
+                  }
+                } else {
+                  sum += (double)0.1131098928571428602;
+                }
+              } else {
+                sum += (double)0.2071130833333333365;
               }
             } else {
-              sum += (double)0.02951973076923076339;
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3853085041046142578) ) ) {
+                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.9275968372821807861) ) ) {
+                  if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-23799.6494140625) ) ) {
+                    sum += (double)0.01493121428571428724;
+                  } else {
+                    sum += (double)0.04757389705882352632;
+                  }
+                } else {
+                  if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.1754499971866607666) ) ) {
+                    sum += (double)0.01924043421052631583;
+                  } else {
+                    sum += (double)0.007741000000000000485;
+                  }
+                }
+              } else {
+                sum += (double)0.1072778660714285709;
+              }
+            }
+          } else {
+            if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2634999901056289673) ) ) {
+              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.846249997615814209) ) ) {
+                if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.9650000035762786865) ) ) {
+                  sum += (double)0.2737090156249999962;
+                } else {
+                  sum += (double)0.1703397968750000047;
+                }
+              } else {
+                sum += (double)0.1514873382352940889;
+              }
+            } else {
+              sum += (double)0.09565905000000000935;
             }
           }
         }
       }
     }
   } else {
-    if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.4212084412574768066) ) ) {
-      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6062864959239959717) ) ) {
-        if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)115.3571434020996094) ) ) {
-          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5382795035839080811) ) ) {
-            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.07735000178217887878) ) ) {
-              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1941.93548583984375) ) ) {
-                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0007499999774154275656) ) ) {
-                  sum += (double)0.6535650312499999837;
+    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5279635190963745117) ) ) {
+      if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.9531540870666503906) ) ) {
+        if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)12.35432529449462891) ) ) {
+          if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.292966499924659729) ) ) {
+            if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0004499999922700226307) ) ) {
+              sum += (double)0.4956641184210526241;
+            } else {
+              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)4.806060552597045898) ) ) {
+                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2719189971685409546) ) ) {
+                  sum += (double)0.347573312500000009;
                 } else {
-                  if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.537549257278442383) ) ) {
-                    if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4542175084352493286) ) ) {
-                      sum += (double)0.5034693269230768875;
+                  sum += (double)0.4303228750000000491;
+                }
+              } else {
+                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4918.664306640625) ) ) {
+                  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2397025004029273987) ) ) {
+                    if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.98050689697265625) ) ) {
+                      sum += (double)0.2664229187500000151;
                     } else {
-                      sum += (double)0.5470988125000000313;
+                      sum += (double)0.1707442321428571386;
                     }
                   } else {
-                    sum += (double)0.5964569791666668452;
+                    sum += (double)0.3772232000000000363;
                   }
-                }
-              } else {
-                sum += (double)0.4434319021739130395;
-              }
-            } else {
-              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)15.99242448806762695) ) ) {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.7584075927734375) ) ) {
-                  sum += (double)0.4816878928571428631;
                 } else {
-                  sum += (double)0.5531843750000000615;
-                }
-              } else {
-                if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4213535040616989136) ) ) {
-                  sum += (double)0.3295773846153846609;
-                } else {
-                  if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.209627151489257812) ) ) {
-                    sum += (double)0.5060349347826086364;
-                  } else {
-                    sum += (double)0.4292330000000000312;
-                  }
+                  sum += (double)0.1742336979166666522;
                 }
               }
             }
           } else {
-            if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0610499996691942215) ) ) {
-              if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7572000026702880859) ) ) {
-                sum += (double)0.6260575952380952325;
+            if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5290337800979614258) ) ) {
+              if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3369925022125244141) ) ) {
+                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2715764492750167847) ) ) {
+                  if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)14.01851844787597656) ) ) {
+                    sum += (double)0.4057702125000000604;
+                  } else {
+                    sum += (double)0.3496767794117647266;
+                  }
+                } else {
+                  sum += (double)0.4613744772727272347;
+                }
               } else {
-                sum += (double)0.6822631842105263411;
+                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.06940000131726264954) ) ) {
+                  if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)23.3217926025390625) ) ) {
+                    if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1940830573439598083) ) ) {
+                      sum += (double)0.5304368428571427652;
+                    } else {
+                      sum += (double)0.4510026500000000049;
+                    }
+                  } else {
+                    if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01344999996945261955) ) ) {
+                      sum += (double)0.620713609374999975;
+                    } else {
+                      sum += (double)0.5527635760869565873;
+                    }
+                  }
+                } else {
+                  if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7172999978065490723) ) ) {
+                    if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2462.08447265625) ) ) {
+                      sum += (double)0.4674634049999999985;
+                    } else {
+                      sum += (double)0.5486769305555556642;
+                    }
+                  } else {
+                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4521709978580474854) ) ) {
+                      sum += (double)0.3743146249999999564;
+                    } else {
+                      sum += (double)0.4509728214285714243;
+                    }
+                  }
+                }
               }
             } else {
-              sum += (double)0.5682127596153845328;
+              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)5.512587547302246094) ) ) {
+                sum += (double)0.4707283000000000439;
+              } else {
+                sum += (double)0.3546551602564101957;
+              }
             }
           }
         } else {
-          sum += (double)0.3377805192307692383;
+          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4281165003776550293) ) ) {
+            if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.3608281761407852173) ) ) {
+              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)34.75934982299804688) ) ) {
+                sum += (double)0.3258021166666665858;
+              } else {
+                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.2211846709251403809) ) ) {
+                  sum += (double)0.253245869999999984;
+                } else {
+                  sum += (double)0.1750764342105263216;
+                }
+              }
+            } else {
+              if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4013499915599822998) ) ) {
+                sum += (double)0.08746133333333334925;
+              } else {
+                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-30015.203125) ) ) {
+                  sum += (double)0.2196387236842105295;
+                } else {
+                  sum += (double)0.130231907894736848;
+                }
+              }
+            }
+          } else {
+            sum += (double)0.4087191710526316135;
+          }
         }
       } else {
-        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.749575495719909668) ) ) {
-          if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8627499938011169434) ) ) {
-            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6519050002098083496) ) ) {
-              sum += (double)0.6144708500000001239;
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3826854974031448364) ) ) {
+          if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)8.917300224304199219) ) ) {
+            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3263.703857421875) ) ) {
+              sum += (double)0.1781407124999999925;
             } else {
-              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7094555199146270752) ) ) {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)3.937209248542785645) ) ) {
-                  sum += (double)0.6390056333333333782;
-                } else {
-                  sum += (double)0.7073781029411764232;
-                }
+              sum += (double)0.0506205238095238097;
+            }
+          } else {
+            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-17592.8583984375) ) ) {
+              sum += (double)0.07336419230769231081;
+            } else {
+              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2954999953508377075) ) ) {
+                sum += (double)0.01146852941176470728;
               } else {
-                sum += (double)0.7114296805555555547;
+                sum += (double)0.02873119230769231175;
+              }
+            }
+          }
+        } else {
+          if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)7.668108701705932617) ) ) {
+            if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1655.2418212890625) ) ) {
+              sum += (double)0.3383331413043478841;
+            } else {
+              sum += (double)0.1472892763157894747;
+            }
+          } else {
+            sum += (double)0.1073359062500000016;
+          }
+        }
+      }
+    } else {
+      if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.062593340873718262) ) ) {
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7417580187320709229) ) ) {
+          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-8047.837158203125) ) ) {
+            sum += (double)0.5355262132352941462;
+          } else {
+            if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2241000011563301086) ) ) {
+              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)3.892453193664550781) ) ) {
+                sum += (double)0.58499865909090909;
+              } else {
+                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.166855335235595703) ) ) {
+                  if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6218225061893463135) ) ) {
+                    sum += (double)0.6891305833333334352;
+                  } else {
+                    sum += (double)0.756399989999999911;
+                  }
+                } else {
+                  if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)10.0501255989074707) ) ) {
+                    sum += (double)0.6086180760869563944;
+                  } else {
+                    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6516129970550537109) ) ) {
+                      sum += (double)0.6653310878378377868;
+                    } else {
+                      sum += (double)0.7270520312499999527;
+                    }
+                  }
+                }
+              }
+            } else {
+              sum += (double)0.562031964285714225;
+            }
+          }
+        } else {
+          if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1121499985456466675) ) ) {
+            if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.9077499806880950928) ) ) {
+              if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.06707561388611793518) ) ) {
+                sum += (double)0.7994250000000000522;
+              } else {
+                sum += (double)0.8260241176470588531;
+              }
+            } else {
+              sum += (double)0.8596976666666668043;
+            }
+          } else {
+            sum += (double)0.7170271999999999757;
+          }
+        }
+      } else {
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6653530001640319824) ) ) {
+          if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)3.543712496757507324) ) ) {
+            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6056869924068450928) ) ) {
+              sum += (double)0.3620861750000000101;
+            } else {
+              sum += (double)0.4527501249999999478;
+            }
+          } else {
+            sum += (double)0.2201220535714285831;
+          }
+        } else {
+          sum += (double)0.4937583863636363923;
+        }
+      }
+    }
+  }
+  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.995000004768371582) ) ) {
+    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4184524863958358765) ) ) {
+      if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)5.972972869873046875) ) ) {
+        if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2441269978880882263) ) ) {
+          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1594.67681884765625) ) ) {
+            sum += (double)0.2077264807692307536;
+          } else {
+            sum += (double)0.1440736500000000253;
+          }
+        } else {
+          if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.1405058130621910095) ) ) {
+            sum += (double)0.4316928076923076674;
+          } else {
+            sum += (double)0.2544134880952380606;
+          }
+        }
+      } else {
+        if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.5349999964237213135) ) ) {
+          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)13.01704549789428711) ) ) {
+            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.1254660002887248993) ) ) {
+              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4006.188720703125) ) ) {
+                sum += (double)0.02618048749999999508;
+              } else {
+                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.09063849970698356628) ) ) {
+                  sum += (double)0.004625320000000000473;
+                } else {
+                  sum += (double)0.01329191666666666889;
+                }
+              }
+            } else {
+              if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.710317611694335938) ) ) {
+                sum += (double)0.03409733333333332672;
+              } else {
+                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)11.12549018859863281) ) ) {
+                  sum += (double)0.1427517638888888829;
+                } else {
+                  sum += (double)0.06097154999999999936;
+                }
               }
             }
           } else {
-            sum += (double)0.7603038157894737026;
+            if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.1149999983608722687) ) ) {
+              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)50.51062774658203125) ) ) {
+                if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.05499999970197677612) ) ) {
+                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-2366.3306884765625) ) ) {
+                    sum += (double)0.003219657894736842243;
+                  } else {
+                    sum += (double)0.01345080000000000234;
+                  }
+                } else {
+                  sum += (double)0.03279212499999999836;
+                }
+              } else {
+                if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.09086100012063980103) ) ) {
+                  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.06499999947845935822) ) ) {
+                    if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8191000223159790039) ) ) {
+                      sum += (double)0.002549440972222224207;
+                    } else {
+                      sum += (double)0.003235985294117647588;
+                    }
+                  } else {
+                    sum += (double)0.005414749999999999425;
+                  }
+                } else {
+                  if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.04499999992549419403) ) ) {
+                    sum += (double)0.01974676785714285857;
+                  } else {
+                    if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)40.41071510314941406) ) ) {
+                      sum += (double)0.006690833333333332487;
+                    } else {
+                      sum += (double)0.003932200000000001146;
+                    }
+                  }
+                }
+              }
+            } else {
+              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)21.9233551025390625) ) ) {
+                sum += (double)0.05569829687499999737;
+              } else {
+                if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8009499907493591309) ) ) {
+                  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2607544958591461182) ) ) {
+                    if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.06174999848008155823) ) ) {
+                      sum += (double)0.006239310344827588006;
+                    } else {
+                      sum += (double)0.01835839439655170824;
+                    }
+                  } else {
+                    sum += (double)0.04103627631578946749;
+                  }
+                } else {
+                  sum += (double)0.04985939285714285213;
+                }
+              }
+            }
           }
         } else {
-          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)0.9451737403869628906) ) ) {
-            sum += (double)0.8435427121212122348;
-          } else {
-            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.840149998664855957) ) ) {
-              sum += (double)0.8123519687499999309;
+          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)15.41989421844482422) ) ) {
+            if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.9750000238418579102) ) ) {
+              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.6701500117778778076) ) ) {
+                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.01369999954476952553) ) ) {
+                  sum += (double)0.1170277499999999998;
+                } else {
+                  if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4047000110149383545) ) ) {
+                    sum += (double)0.01795086363636363633;
+                  } else {
+                    if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.07490000128746032715) ) ) {
+                      sum += (double)0.05033398148148148649;
+                    } else {
+                      sum += (double)0.1039903461538461554;
+                    }
+                  }
+                }
+              } else {
+                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-5672.457275390625) ) ) {
+                  sum += (double)0.1247126944444444246;
+                } else {
+                  sum += (double)0.2306835652173912787;
+                }
+              }
             } else {
-              sum += (double)0.744876868421052718;
+              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.08119999989867210388) ) ) {
+                sum += (double)0.3327270961538462135;
+              } else {
+                sum += (double)0.1787198229166666597;
+              }
+            }
+          } else {
+            if ( UNLIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.5949999988079071045) ) ) {
+              sum += (double)0.1476076195652173684;
+            } else {
+              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)30.89444446563720703) ) ) {
+                if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-4356.7021484375) ) ) {
+                  if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.9549999833106994629) ) ) {
+                    if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2529499903321266174) ) ) {
+                      sum += (double)0.06497487234042552406;
+                    } else {
+                      sum += (double)0.1426319166666666916;
+                    }
+                  } else {
+                    if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)45.08459663391113281) ) ) {
+                      sum += (double)0.02273514285714285654;
+                    } else {
+                      sum += (double)0.06231561764705883383;
+                    }
+                  }
+                } else {
+                  sum += (double)0.01792440277777777868;
+                }
+              } else {
+                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.9094765186309814453) ) ) {
+                  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2316905036568641663) ) ) {
+                    if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2835500016808509827) ) ) {
+                      sum += (double)0.01014961764705882459;
+                    } else {
+                      sum += (double)0.03785726388888889515;
+                    }
+                  } else {
+                    sum += (double)0.04286629347826086817;
+                  }
+                } else {
+                  sum += (double)0.00907885185185185184;
+                }
+              }
             }
           }
         }
       }
     } else {
-      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6592045128345489502) ) ) {
-        if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.8240259885787963867) ) ) {
-          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)17.36666679382324219) ) ) {
-            if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4125999957323074341) ) ) {
-              sum += (double)0.5227676759259259898;
-            } else {
-              if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3817.0164794921875) ) ) {
-                sum += (double)0.4627743899999999244;
-              } else {
-                sum += (double)0.2629198500000000105;
-              }
-            }
+      if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)1.939981758594512939) ) ) {
+        sum += (double)0.5543423874999999779;
+      } else {
+        if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.5863704085350036621) ) ) {
+          if ( LIKELY( !(data[7].missing != -1) || (data[7].fvalue <= (double)0.9549999833106994629) ) ) {
+            sum += (double)0.2044686477272726899;
           } else {
-            sum += (double)0.1848479821428571646;
+            sum += (double)0.4577446299999999857;
           }
         } else {
-          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5457390248775482178) ) ) {
-            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)9.242127418518066406) ) ) {
-              if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3201.2772216796875) ) ) {
-                sum += (double)0.3796696071428571906;
+          if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5781860053539276123) ) ) {
+            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)10.34999990463256836) ) ) {
+              sum += (double)0.1850519705882353316;
+            } else {
+              sum += (double)0.05398719791666666684;
+            }
+          } else {
+            sum += (double)0.3254811500000000524;
+          }
+        }
+      }
+    }
+  } else {
+    if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4760459959506988525) ) ) {
+      if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.9564632177352905273) ) ) {
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3677469938993453979) ) ) {
+          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)10.09288978576660156) ) ) {
+            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.2322600036859512329) ) ) {
+              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.07519999891519546509) ) ) {
+                sum += (double)0.3907220869565216637;
               } else {
-                if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.533619403839111328) ) ) {
-                  sum += (double)0.3193351346153845971;
+                if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.4879499971866607666) ) ) {
+                  sum += (double)0.2695826184210526333;
                 } else {
-                  if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.4311324954032897949) ) ) {
-                    sum += (double)0.1100842019230769131;
-                  } else {
-                    sum += (double)0.2082867499999999927;
-                  }
+                  sum += (double)0.164451190476190473;
                 }
               }
             } else {
-              if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.375544905662536621) ) ) {
-                sum += (double)0.0992585795454545422;
+              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.005299999844282865524) ) ) {
+                sum += (double)0.5477037884615383323;
               } else {
-                sum += (double)0.02907077083333332868;
+                if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)27.31999969482421875) ) ) {
+                  if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)19.11406326293945312) ) ) {
+                    if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3036939948797225952) ) ) {
+                      sum += (double)0.3494255377358490011;
+                    } else {
+                      sum += (double)0.4239365753968253325;
+                    }
+                  } else {
+                    sum += (double)0.2614773571428571364;
+                  }
+                } else {
+                  sum += (double)0.4708343499999999571;
+                }
               }
             }
           } else {
-            if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-1812.7314453125) ) ) {
-              sum += (double)0.390892904761904747;
+            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)24.36721611022949219) ) ) {
+              if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7466000020503997803) ) ) {
+                if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-19895.677734375) ) ) {
+                  if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)17.42591762542724609) ) ) {
+                    sum += (double)0.3828698958333332514;
+                  } else {
+                    sum += (double)0.308667666666666729;
+                  }
+                } else {
+                  if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)28.88666629791259766) ) ) {
+                    if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.3115000128746032715) ) ) {
+                      sum += (double)0.2374363500000000182;
+                    } else {
+                      sum += (double)0.1205066923076922869;
+                    }
+                  } else {
+                    sum += (double)0.3268636818181817616;
+                  }
+                }
+              } else {
+                sum += (double)0.1328645795454545253;
+              }
             } else {
-              sum += (double)0.281025828947368439;
+              if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.2740000039339065552) ) ) {
+                sum += (double)0.05852264473684211377;
+              } else {
+                sum += (double)0.1873431309523809207;
+              }
             }
+          }
+        } else {
+          if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)12.67706918716430664) ) ) {
+            if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.07530000060796737671) ) ) {
+              if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)12.09748411178588867) ) ) {
+                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.253616824746131897) ) ) {
+                  sum += (double)0.5326502499999999918;
+                } else {
+                  sum += (double)0.4548314772727272137;
+                }
+              } else {
+                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.003649999969638884068) ) ) {
+                  sum += (double)0.6287297105263157659;
+                } else {
+                  sum += (double)0.5734417499999999723;
+                }
+              }
+            } else {
+              if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)24.80522632598876953) ) ) {
+                if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)0.51411476731300354) ) ) {
+                  if ( LIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3244.843017578125) ) ) {
+                    sum += (double)0.4923207875000000233;
+                  } else {
+                    sum += (double)0.535799104166666651;
+                  }
+                } else {
+                  sum += (double)0.4287526093749999823;
+                }
+              } else {
+                sum += (double)0.4199672249999999996;
+              }
+            }
+          } else {
+            sum += (double)0.3066909736842104994;
           }
         }
       } else {
-        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.386647224426269531) ) ) {
-          sum += (double)0.6086511730769230688;
+        if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.3774434924125671387) ) ) {
+          if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.271773815155029297) ) ) {
+            sum += (double)0.1889765119047618902;
+          } else {
+            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)5.297987461090087891) ) ) {
+              sum += (double)0.1084133653846153927;
+            } else {
+              if ( UNLIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.550406396389007568) ) ) {
+                sum += (double)0.0688807499999999906;
+              } else {
+                if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.3241499960422515869) ) ) {
+                  sum += (double)0.02419535714285714345;
+                } else {
+                  sum += (double)0.04622354411764705712;
+                }
+              }
+            }
+          }
         } else {
-          sum += (double)0.3831498095238095591;
+          if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-3044.78466796875) ) ) {
+            sum += (double)0.3214054038461539031;
+          } else {
+            if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)3.638694882392883301) ) ) {
+              sum += (double)0.2618411973684210969;
+            } else {
+              sum += (double)0.09014780555555555741;
+            }
+          }
+        }
+      }
+    } else {
+      if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.6589429974555969238) ) ) {
+        if ( LIKELY( !(data[4].missing != -1) || (data[4].fvalue <= (double)1.043504655361175537) ) ) {
+          if ( UNLIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.06890000030398368835) ) ) {
+            if ( UNLIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)9.347228527069091797) ) ) {
+              sum += (double)0.5945411875000000679;
+            } else {
+              if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)4.59545445442199707) ) ) {
+                if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.8599999845027923584) ) ) {
+                  sum += (double)0.6743907499999999278;
+                } else {
+                  sum += (double)0.7139091470588236898;
+                }
+              } else {
+                sum += (double)0.6270456617647058861;
+              }
+            }
+          } else {
+            if ( LIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)10.98964595794677734) ) ) {
+              if ( LIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.5938400030136108398) ) ) {
+                if ( LIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.7853000164031982422) ) ) {
+                  if ( UNLIKELY( !(data[5].missing != -1) || (data[5].fvalue <= (double)-6625.02880859375) ) ) {
+                    sum += (double)0.4925222361111110114;
+                  } else {
+                    sum += (double)0.5675061057692307731;
+                  }
+                } else {
+                  sum += (double)0.4672073437499999482;
+                }
+              } else {
+                sum += (double)0.6246794431818183391;
+              }
+            } else {
+              sum += (double)0.4073714615384615434;
+            }
+          }
+        } else {
+          if ( UNLIKELY( !(data[0].missing != -1) || (data[0].fvalue <= (double)2.259615302085876465) ) ) {
+            sum += (double)0.3718651250000000186;
+          } else {
+            sum += (double)0.2259381710526315867;
+          }
+        }
+      } else {
+        if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.749606013298034668) ) ) {
+          if ( UNLIKELY( !(data[3].missing != -1) || (data[3].fvalue <= (double)0.3984000086784362793) ) ) {
+            sum += (double)0.5628007631578947345;
+          } else {
+            if ( LIKELY( !(data[1].missing != -1) || (data[1].fvalue <= (double)12.17498064041137695) ) ) {
+              sum += (double)0.672322928571428724;
+            } else {
+              sum += (double)0.7616345394736843133;
+            }
+          }
+        } else {
+          if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.1021500006318092346) ) ) {
+            if ( LIKELY( !(data[2].missing != -1) || (data[2].fvalue <= (double)0.0385500006377696991) ) ) {
+              sum += (double)0.8618530955882354183;
+            } else {
+              sum += (double)0.8044796124999999964;
+            }
+          } else {
+            if ( UNLIKELY( !(data[6].missing != -1) || (data[6].fvalue <= (double)0.7972725033760070801) ) ) {
+              sum += (double)0.7556540500000000771;
+            } else {
+              sum += (double)0.7318417499999999576;
+            }
+          }
         }
       }
     }
