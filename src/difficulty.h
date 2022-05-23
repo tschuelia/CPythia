@@ -91,7 +91,7 @@ extern "C"
   CORAX_EXPORT double corax_msa_predict_difficulty(
       const corax_msa_features *msa_features,
       double                    average_rfdistance_parsimony_trees,
-      double                    proportion_unique_parsimony_tree_topologies, );
+      double                    proportion_unique_parsimony_tree_topologies);
 
 #ifdef __cplusplus
 } /* extern "C" */
