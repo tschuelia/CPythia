@@ -17,7 +17,8 @@ int main(int argc, char *argv[])
 
   corax_msa_features * features = corax_msa_compute_features(msa, 4, corax_map_nt);
   average_rf_distance_parsimony_trees = 0.0; // TODO: not yet implemented using Coraxlib
-  double predicted_difficulty = corax_msa_predict_difficulty(features, average_rf_distance_parsimony_trees, 0);
+  proportion_unique_topos_parsimony_trees = 0.0; // TODO: not yet implemented using Coraxlib
+  double predicted_difficulty = corax_msa_predict_difficulty(features, average_rf_distance_parsimony_trees, proportion_unique_topos_parsimony_trees);
 
   std::cout << "The predicted difficulty for the given MSA is: " << predicted_difficulty << "\n";
 }
