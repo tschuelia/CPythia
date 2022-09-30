@@ -129,7 +129,7 @@ int main(int argc, char *argv[])
 
   corax_msa_features * features = corax_msa_compute_features(msa, 4, corax_map_nt);
 
-  double out_pred = corax_msa_predict_difficulty(features, avg_rrf, num_unique);
+  double out_pred = corax_msa_predict_difficulty(features, avg_rrf, num_unique / 100.0);
   out_pred = round(out_pred * 100.0) / 100.0;
 
   std::cout << "The predicted difficulty for MSA " << filename << " is: " << out_pred << "\n";
