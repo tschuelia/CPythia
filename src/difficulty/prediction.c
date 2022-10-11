@@ -36,10 +36,10 @@ const char* get_leaf_output_type(void) {
   return "float64";
 }
 
-
 static inline double pred_transform(double margin) {
   return margin;
 }
+
 double predict(union Entry* data, int pred_margin) {
   double sum = (double)0;
   unsigned int tmp;
@@ -60,7 +60,7 @@ double predict(union Entry* data, int pred_margin) {
   sum += predict_margin_unit13(data);
   sum += predict_margin_unit14(data);
 
-  sum = sum / 100 + (double)(0);
+  sum = sum + (double)(0);
   if (!pred_margin) {
     return pred_transform(sum);
   } else {

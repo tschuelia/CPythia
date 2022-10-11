@@ -8,6 +8,7 @@ extern "C"
 #endif
 
 #include "corax/core/partition.h"
+#include "corax/util/compress.h"
 #include "corax/util/msa.h"
 #include "difficulty/prediction.h"
 

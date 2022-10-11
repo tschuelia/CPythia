@@ -1,8 +1,5 @@
 #include "difficulty.h"
 
-#include "corax/util/compress.h"
-#include "corax/util/msa.h"
-
 CORAX_EXPORT corax_msa_features *corax_msa_compute_features(
     corax_msa_t *msa, unsigned int states, const corax_state_t *tipmap)
 {
@@ -93,6 +90,11 @@ corax_msa_predict_difficulty(const corax_msa_features *msa_features,
 
   double prediction = predict(feat, prediction_margin);
   free(feat);
+
+  // LightGBM may produce results lower than 0.0 or higher than 1.0
+  // -> clip the difficulty to [0.0, 1.0]
+  if (prediction < 0.0) prediction = 0.0;
+  if (prediction > 1.0) prediction = 1.0;
 
   return prediction;
 }
