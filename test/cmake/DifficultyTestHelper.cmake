@@ -1,75 +1,58 @@
 # Adapted from https://github.com/kamping-site/kamping/blob/main/tests/cmake/KampingTestHelper.cmake
 # and https://github.com/kamping-site/kamping/blob/main/tests/cmake/KaTestrophe.cmake
 #
-# I removed the MPI parts because coraxlib doesn't directly use MPI yet; parallelization managed by the caller.
+# I removed the MPI parts because coraxlib doesn't directly use MPI yet; parallelization managed by
+# the caller.
 
-include(GoogleTest)
+include(warningFlags)
+include(sanitizers)
+include(targetSourcesLocal)
 
-# We're relying on GoogleTest already being installed on this system.
-# add_subdirectory("${PROJECT_SOURCE_DIR}/extern/googletest" "extern/googletest")
+set(CORAX_TEST_WARNING_FLAGS ${CORAX_WARNING_FLAGS})
 
-# keep the cache clean
-mark_as_advanced(
-        BUILD_GMOCK BUILD_GTEST BUILD_SHARED_LIBS
-        gmock_build_tests gtest_build_samples gtest_build_tests
-        gtest_disable_pthreads gtest_force_shared_crt gtest_hide_internal_symbols
-)
-
-
-function(target_add_address_sanitizer TARGET)
-    if(${CMAKE_VERSION} VERSION_LESS "3.13")
-        set_target_properties(${TARGET} PROPERTIES COMPILE_FLAGS -fsanitize=address)
-        set_target_properties(${TARGET} PROPERTIES LINK_FLAGS -fsanitize=address)
-    else()
-        target_compile_options(${TARGET} PRIVATE -fsanitize=address)
-        target_link_options(${TARGET} PRIVATE -fsanitize=address)
-    endif()
-endfunction()
-
-# Convenience wrapper for adding tests for Coraxlib
-# This creates the target, links googletest and coraxlib, enables warnings, and registers the test.
+# Convenience wrapper for adding tests for Coraxlib This creates the target, links googletest and
+# coraxlib, enables warnings, and registers the test.
 #
-# TARGET_NAME the target name
-# FILES the files of the target
+# TARGET_NAME the target name FILES the files of the target
 #
 # example: corax_register_test(mytarget FILES mytarget.cpp)
-function(corax_register_test CORAX_TARGET_NAME)
+function (corax_register_test TARGET_NAME)
     cmake_parse_arguments(
-            "CORAX"              # prefix
-            "NO_EXCEPTION_MODE"  # flags
-            ""                   # one-valued arguments
-            "FILES;DEFINES"      # multi-valued arguments
+            "CORAX" # prefix
+            "NO_EXCEPTION_MODE" # flags
+            "" # one-valued arguments
+            "FILES;DEFINES" # multi-valued arguments
             ${ARGN}
     )
 
     # Add our main.cpp to the list of source files and register the test target.
-    list(APPEND CORAX_FILES src/main.cpp)
-    add_executable(${CORAX_TARGET_NAME} ${CORAX_FILES})
+    add_executable(${TARGET_NAME} ${CORAX_FILES})
+    target_sources_local(${TARGET_NAME} PRIVATE ${CORAX_FILES} src/main.cpp)
 
-    # Link gtest, gmock, coraxlib and pthread to the test target; also add corax lib include directories.
-    target_include_directories(${CORAX_TARGET_NAME} PRIVATE ${CORAX_INCLUDE_DIRS})
-    target_link_libraries(${CORAX_TARGET_NAME} PRIVATE coraxlib_difficulty_prediction_lib gtest gmock ${CORAX_LIBRARIES} pthread)
+    # Link gtest, gmock, coraxlib and pthread to the test target; also add corax lib include
+    # directories.
+    target_link_libraries(${TARGET_NAME} PRIVATE coraxlib_difficulty_prediction_lib gtest gmock ${CORAX_LIB_TARGET} pthread)
+    target_include_directories(${TARGET_NAME} PRIVATE ${CORAX_INCLUDE_DIRS})
 
     # Enable lots of warnings, enable the adress sanitizer and pass on defines (e.g. HAVE_AVX=1 for
     # some tests).
-    target_compile_options(${CORAX_TARGET_NAME} PRIVATE ${CORAX_TEST_WARNING_FLAGS})
-    target_compile_definitions(${CORAX_TARGET_NAME} PRIVATE ${CORAX_DEFINES})
-    target_add_address_sanitizer(${CORAX_TARGET_NAME})
+    target_compile_options(${TARGET_NAME} PRIVATE ${CORAX_TEST_WARNING_FLAGS})
+    target_compile_definitions(${TARGET_NAME} PRIVATE ${CORAX_DEFINES})
+    target_add_address_sanitizer(${TARGET_NAME})
 
     # Let ctest discover all tests in the test target (-> pretty list when calling ctest).
-    gtest_discover_tests(${CORAX_TARGET_NAME} WORKING_DIRECTORY ${PROJECT_DIR})
-
-endfunction()
+    gtest_discover_tests(${TARGET_NAME})
+endfunction ()
 
 # Registers a set of tests which should fail to compile.
 #
-# TARGET prefix for the targets to be built
-# FILES the list of files to include in the target
-# SECTIONS sections of the compilation test to build
-# LIBRARIES libraries to link via target_link_libraries(...)
+# TARGET prefix for the targets to be built FILES the list of files to include in the target
+# SECTIONS sections of the compilation test to build LIBRARIES libraries to link via
+# target_link_libraries(...)
 #
-# Loosely based on: https://stackoverflow.com/questions/30155619/expected-build-failure-tests-in-cmake
-function(katestrophe_add_compilation_failure_test)
+# Loosely based on:
+# https://stackoverflow.com/questions/30155619/expected-build-failure-tests-in-cmake
+function (katestrophe_register_compilation_failure_test)
     cmake_parse_arguments(
             "KATESTROPHE" # prefix
             "" # options
@@ -83,7 +66,7 @@ function(katestrophe_add_compilation_failure_test)
     target_link_libraries(${KATESTROPHE_TARGET} PUBLIC gtest ${KATESTROPHE_LIBRARIES})
 
     # For each given section, add a target.
-    foreach(SECTION ${KATESTROPHE_SECTIONS})
+    foreach (SECTION ${KATESTROPHE_SECTIONS})
         string(TOLOWER ${SECTION} SECTION_LOWERCASE)
         set(THIS_TARGETS_NAME "${KATESTROPHE_TARGET}.${SECTION_LOWERCASE}")
 
@@ -96,9 +79,7 @@ function(katestrophe_add_compilation_failure_test)
 
         # Exclude the target fromn the "all" target.
         set_target_properties(
-                ${THIS_TARGETS_NAME} PROPERTIES
-                EXCLUDE_FROM_ALL TRUE
-                EXCLUDE_FROM_DEFAULT_BUILD TRUE
+                ${THIS_TARGETS_NAME} PROPERTIES EXCLUDE_FROM_ALL TRUE EXCLUDE_FROM_DEFAULT_BUILD TRUE
         )
 
         # Add a test invoking "cmake --build" to test if the target compiles.
@@ -110,27 +91,22 @@ function(katestrophe_add_compilation_failure_test)
 
         # Specify, that the target should not compile.
         set_tests_properties("${THIS_TARGETS_NAME}" PROPERTIES WILL_FAIL TRUE)
-    endforeach()
-endfunction()
+    endforeach ()
+endfunction ()
 
-# Convenience wrapper for registering a set of tests that should fail to compile and require coraxlib to be linked.
+# Convenience wrapper for registering a set of tests that should fail to compile and require
+# coraxlib to be linked.
 #
-# TARGET prefix for the targets to be built
-# FILES the list of files to include in the target
+# TARGET prefix for the targets to be built FILES the list of files to include in the target
 # SECTIONS sections of the compilation test to build
 #
-function(corax_register_compilation_failure_test CORAX_TARGET_NAME)
-    cmake_parse_arguments(
-            "CORAX"
-            "NO_EXCEPTION_MODE"
-            ""
-            "FILES;SECTIONS"
-            ${ARGN}
-    )
-    katestrophe_add_compilation_failure_test(
-            TARGET ${CORAX_TARGET_NAME}
+function (corax_register_compilation_failure_test TARGET_NAME)
+    cmake_parse_arguments("CORAX" "NO_EXCEPTION_MODE" "" "FILES;SECTIONS" ${ARGN})
+    katestrophe_register_compilation_failure_test(
+            TARGET ${TARGET_NAME}
             FILES ${CORAX_FILES}
             SECTIONS ${CORAX_SECTIONS}
             LIBRARIES ${CORAX_LIBRARIES} pthread
     )
-endfunction()
+    # corax_set_kassert_flags(${CORAX_TARGET_NAME} ${ARGN})
+endfunction ()
