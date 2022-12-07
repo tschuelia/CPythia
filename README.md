@@ -140,3 +140,9 @@ int main(int argc, char *argv[])
   for (auto s : splits) corax_utree_split_destroy(s);
 }
 ```
+
+
+## Publication
+The paper explaining the details of Pythia is published in MBE:
+Haag, J., Höhler, D., Bettisworth, B., & Stamatakis, A. (2022). **From Easy to Hopeless - Predicting the Difficulty of Phylogenetic Analyses.** *Molecular Biology and Evolution*, 39(12). [https://doi.org/10.1093/molbev/msac254](https://doi.org/10.1093/molbev/msac254)
+
