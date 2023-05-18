@@ -12,7 +12,7 @@ extern "C"
 #include "corax/util/msa.h"
 #include "difficulty/prediction.h"
 
-#define num_features 8
+#define num_features 10
 
   /**
    * A structure that contains attributes of a multiple sequence alignment.
