@@ -29,6 +29,9 @@ TEST(Difficulty, msa_features)
     double patterns_per_taxa = features->patterns_per_taxa;
     EXPECT_NEAR(patterns_per_taxa, n_patterns / (double)n_taxa, 0.001);
 
+    double patterns_per_site = features->patterns_per_taxa;
+    EXPECT_NEAR(patterns_per_site, n_patterns / (double)n_sites, 0.001);
+
     double proportion_gaps = features->proportion_gaps;
     EXPECT_NEAR(proportion_gaps, 0.0839, 0.001);
 

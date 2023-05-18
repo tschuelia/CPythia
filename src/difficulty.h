@@ -42,9 +42,15 @@ extern "C"
     double patterns_per_taxa;
 
     /**
+     * Patterns per site ratio of the alignment.
+     */
+    double patterns_per_site;
+
+    /**
      * The proportion of gaps in the alignment.
      */
     double proportion_gaps;
+
     /**
      * The proportion of invariant sites in the alignment.
      */
@@ -54,6 +60,12 @@ extern "C"
      * Shannon entropy of the alignment.
      */
     double entropy;
+
+    /**
+     * Entropy like metric based on the number and frequency of patterns in the alignment
+     */
+    double pattern_entropy;
+
     /**
      * Bollback multinomial statsitics of the alignment.
      * Computed according to Bollback, JP: Bayesian model adequacy and choice in

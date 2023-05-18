@@ -42,6 +42,7 @@ CORAX_EXPORT corax_msa_features *corax_msa_compute_features(
   features->proportion_gaps      = msa_stats->gap_prop;
   features->proportion_invariant = msa_stats->inv_prop;
   features->entropy              = msa_stats->entropy;
+  features->pattern_entropy      = msa_stats->pattern_entropy;
 
   // The Bollback multinomial computation changes the MSA object
   // the msa->length afterwards corresponds to the number of patterns instead of
@@ -56,6 +57,7 @@ CORAX_EXPORT corax_msa_features *corax_msa_compute_features(
   const double msa_patterns   = (double)msa->length;
   features->patterns          = msa_patterns;
   features->patterns_per_taxa = msa_patterns / msa_taxa;
+  features->patterns_per_site = msa_patterns / msa_sites;
 
   corax_msa_destroy_stats(msa_stats);
   free(site_pattern_map);
@@ -79,7 +81,10 @@ corax_msa_predict_difficulty(const corax_msa_features *msa_features,
       msa_features->entropy,
       msa_features->bollback_multinomial,
       average_rfdistance_parsimony_trees,
-      proportion_unique_parsimony_tree_topologies};
+      proportion_unique_parsimony_tree_topologies,
+      msa_features->patterns_per_site,
+      msa_features->pattern_entropy
+  };
 
   for (int i = 0; i < num_features; ++i)
   {
