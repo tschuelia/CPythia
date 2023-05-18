@@ -9,7 +9,7 @@ size_t get_num_class(void) {
 }
 
 size_t get_num_feature(void) {
-  return 8;
+  return 10;
 }
 
 const char* get_pred_transform(void) {
@@ -36,10 +36,10 @@ const char* get_leaf_output_type(void) {
   return "float64";
 }
 
+
 static inline double pred_transform(double margin) {
   return margin;
 }
-
 double predict(union Entry* data, int pred_margin) {
   double sum = (double)0;
   unsigned int tmp;
