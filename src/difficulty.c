@@ -42,17 +42,14 @@ CORAX_EXPORT corax_msa_features *corax_msa_compute_features(
   features->proportion_gaps      = msa_stats->gap_prop;
   features->proportion_invariant = msa_stats->inv_prop;
   features->entropy              = msa_stats->entropy;
-  features->pattern_entropy      = msa_stats->pattern_entropy;
 
-  // The Bollback multinomial computation changes the MSA object
+  // The Bollback multinomial and pattern_entropy computations changes the MSA object
   // the msa->length afterwards corresponds to the number of patterns instead of
   // the number of sites
-  unsigned int *site_pattern_map =
-      (unsigned int *)calloc(msa->length, sizeof(unsigned int));
-  unsigned int *site_weights =
-      corax_compress_site_patterns_msa(msa, tipmap, site_pattern_map);
-  features->bollback_multinomial =
-      corax_msa_bollback_multinomial(msa, site_weights, tipmap);
+  unsigned int *site_pattern_map = (unsigned int *)calloc(msa->length, sizeof(unsigned int));
+  unsigned int *site_weights = corax_compress_site_patterns_msa(msa, tipmap, site_pattern_map);
+  features->bollback_multinomial = corax_msa_bollback_multinomial(msa, site_weights, tipmap);
+  features->pattern_entropy = corax_msa_pattern_entropy(msa, site_weights, tipmap);
 
   const double msa_patterns   = (double)msa->length;
   features->patterns          = msa_patterns;
