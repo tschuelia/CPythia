@@ -1,13 +1,5 @@
-file(GLOB DIFFICULTY_SOURCE_FILES difficulty/tu*.c)
-
-add_library(
-        coraxlib_difficulty_prediction_lib
-        STATIC
-        difficulty.c
-        difficulty/prediction.c
-        ${DIFFICULTY_SOURCE_FILES}
-)
+add_subdirectory(corax)
 
 target_include_directories(
-        coraxlib_difficulty_prediction_lib PRIVATE ${CORAX_INCLUDE_DIRS}
+  coraxlib_difficulty_prediction_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
 )
