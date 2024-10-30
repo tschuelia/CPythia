@@ -89,8 +89,8 @@ corax_msa_predict_difficulty(const corax_msa_features *msa_features,
   }
 
   int prediction_margin = 0;
-
-  double prediction = predict(feat, prediction_margin);
+  double prediction;
+  predict(feat, prediction_margin, &prediction);
   free(feat);
 
   // LightGBM may produce results lower than 0.0 or higher than 1.0
