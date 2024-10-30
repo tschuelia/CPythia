@@ -14,45 +14,35 @@
 #define UNLIKELY(x) (x)
 #endif
 
+#define N_TARGET 1
+#define MAX_N_CLASS 1
+
 union Entry {
   int missing;
   double fvalue;
   int qvalue;
 };
 
-struct Node {
-  uint8_t default_left;
-  unsigned int split_index;
-  double threshold;
-  int left_child;
-  int right_child;
-};
-
-extern const unsigned char is_categorical[];
-
-
-size_t get_num_class(void);
-size_t get_num_feature(void);
-const char* get_pred_transform(void);
-float get_sigmoid_alpha(void);
-float get_ratio_c(void);
-float get_global_bias(void);
+int32_t get_num_target(void);
+void get_num_class(int32_t* out);
+int32_t get_num_feature(void);
 const char* get_threshold_type(void);
 const char* get_leaf_output_type(void);
+void predict(union Entry* data, int pred_margin, double* result);
+void postprocess(double* result);
+void predict_unit0(union Entry* data, double* result);
+void predict_unit1(union Entry* data, double* result);
+void predict_unit2(union Entry* data, double* result);
+void predict_unit3(union Entry* data, double* result);
+void predict_unit4(union Entry* data, double* result);
+void predict_unit5(union Entry* data, double* result);
+void predict_unit6(union Entry* data, double* result);
+void predict_unit7(union Entry* data, double* result);
+void predict_unit8(union Entry* data, double* result);
+void predict_unit9(union Entry* data, double* result);
+void predict_unit10(union Entry* data, double* result);
+void predict_unit11(union Entry* data, double* result);
+void predict_unit12(union Entry* data, double* result);
+void predict_unit13(union Entry* data, double* result);
+void predict_unit14(union Entry* data, double* result);
 
-double predict(union Entry* data, int pred_margin);
-double predict_margin_unit0(union Entry* data);
-double predict_margin_unit1(union Entry* data);
-double predict_margin_unit2(union Entry* data);
-double predict_margin_unit3(union Entry* data);
-double predict_margin_unit4(union Entry* data);
-double predict_margin_unit5(union Entry* data);
-double predict_margin_unit6(union Entry* data);
-double predict_margin_unit7(union Entry* data);
-double predict_margin_unit8(union Entry* data);
-double predict_margin_unit9(union Entry* data);
-double predict_margin_unit10(union Entry* data);
-double predict_margin_unit11(union Entry* data);
-double predict_margin_unit12(union Entry* data);
-double predict_margin_unit13(union Entry* data);
-double predict_margin_unit14(union Entry* data);
