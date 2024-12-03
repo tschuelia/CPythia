@@ -77,9 +77,9 @@ corax_msa_predict_difficulty(const corax_msa_features *msa_features,
       msa_features->proportion_invariant,
       msa_features->entropy,
       msa_features->bollback_multinomial,
-      average_rfdistance_parsimony_trees,
       msa_features->patterns_per_site,
       msa_features->pattern_entropy,
+      average_rfdistance_parsimony_trees,
       proportion_unique_parsimony_tree_topologies,
   };
 
