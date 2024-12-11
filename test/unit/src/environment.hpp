@@ -32,8 +32,8 @@ std::list<PredAttr> dna_msas() {
 
 std::list<PredAttr> aa_msas() {
     std::list<PredAttr> aa_msas = {
-            std::make_tuple(std::string(STRINGIFY(DATAPATH/AA_1.phy)), 0.30, 0.88, 0.02),
-            std::make_tuple(std::string(STRINGIFY(DATAPATH/AA_2.phy)), 0.28, 0.96, 0.02),
+            std::make_tuple(std::string(STRINGIFY(DATAPATH/AA_1.phy)), 0.30, 0.88, 0.01),
+            std::make_tuple(std::string(STRINGIFY(DATAPATH/AA_2.phy)), 0.28, 0.96, 0.09),
             std::make_tuple(std::string(STRINGIFY(DATAPATH/AA_3.phy)), 0.40, 1.0, 0.07),
     };
 
