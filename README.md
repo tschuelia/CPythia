@@ -141,6 +141,66 @@ int main(int argc, char *argv[])
 }
 ```
 
+## Exporting PyPythia to CPythia
+The following instructions explain how you can export the latest (Pypythia)[https://github.com/tschuelia/PyPythia] predictor to C.
+PyPythia predictors are LightGBM Boosters and you can use the (tl2cgen)[https://tl2cgen.readthedocs.io] library to generate a collection of C files that contain all the decisions of all trees in the predictor as plain if-statements. I recommend using a Jupyter Notebook for running the following code.
+
+1. Install the required packages (see the Note below if you have a MacBook with an ARM chip):
+   - lightgbm
+   - tl2cgen
+   - treelite
+   - notebook # when using Jupyter Notebooks as recommended
+
+2. Import the required libraries
+```python
+import lightgbm as lgb
+import tl2cgen
+import treelite
+import pickle   # if your predictor is pickled
+```
+
+3. Load the model as python object
+```python
+# if the predictor is pickled
+model_file = "path/to/model"
+
+model = pickle.load(open(model_file, "rb"))
+
+# if the predictor is a LightGBM .txt model export
+model = lgb.Booster(model_file=model_file)
+```
+
+4. Export the model using treelite & tl2cgen
+```python
+params = {"parallel_comp": 16}  # this will split the resulting C export into 16 files for parallel compilation
+
+treelite_model = treelite.frontend.from_lightgbm(model)
+library_name = "CPythia"
+
+tl2cgen.export_srcpkg(
+    treelite_model,
+    toolchain="gcc",
+    pkgpath="CPythia.zip",
+    libname=library_name,
+    params=params,
+    verbose=False
+)
+```
+This will generate a `.zip` file in your current working directory named `CPythia.zip`.
+
+5. Open the `.zip` file and delete the `Makefile` and `recipe.json`. 
+6. Rename the `header.c` and `main.c` files to `prediction.c` and `prediction.h`. Make sure to also rename the respective include statements in the `tu*.c` files!
+7. Replace all files in the `difficulty` directory of this repo with the created files.
+
+
+ **Note for MacBooks with ARM Chips**
+Until the tl2cgen feedstock merges the ARM-OSX migration, you need to install the OSX-64 version of **all** packages to be able to run these instructions.
+To do so, you need to use `micromamba` and create a new environment with the `platform` flag:
+
+`micromamba env create -n foo --platform osx-64`
+
+Afterwards you can simply install everything as usual with `micromamba install ...`
+
 
 ## Publication
 The paper explaining the details of Pythia is published in MBE:
